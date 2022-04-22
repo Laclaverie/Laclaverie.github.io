@@ -16,6 +16,7 @@ Ce github sera divisé en quatre :
 - Les projets de jeu vidéo : 
 
 - Les projets de traitement de l'image: 
+- Utilisation des operateurs morphologique pour estimer la quantité d'espace non rangé dans un espace. [github](https://github.com/Laclaverie/TNI-UAQC-TP1)
 
 - Les projets de programmation :
 
