@@ -11,13 +11,20 @@ Je vous prie de m'excuser du dérangement occasionné
 
 Cordialement 
 
-Ce github sera divisé en quatre :
+Ce github sera divisé en deux thèmes, un projet peut avoir plusieurs tags :
+- (JVX) : Jeu vidéo 
+- (TIM) : Traitement de l'image
+- (PGT) : Programmation "classique"
+- (#xx) : coups de cœur avec classement
 
-- Les projets de jeu vidéo : 
+# Les projets de jeu vidéo : 
+  - Qat Game, Unity 2D --Projet actuellement en train d'etre fait--
+  - PsyHunt, Unity 3D 
+  - Le plus long trajet en voiture, OpenCV, OpenGL, QT, C++. [github](https://github.com/Laclaverie/Voiture)
 
-- Les projets de traitement de l'image: 
-- Utilisation des operateurs morphologique pour estimer la quantité d'espace non rangé dans un espace. [github](https://github.com/Laclaverie/TNI-UAQC-TP1)
+# Les projets de traitement de l'image et programmation en général: 
+  - Utilisation des operateurs morphologique pour estimer la quantité d'espace non rangé dans un espace, python OpenCV. [github](https://github.com/Laclaverie/TNI-UAQC-TP1)
+  - Programmation multithread en JAVA [github](https://github.com/Laclaverie/hpp)
+  - 
+  
 
-- Les projets de programmation :
-
-- Les projets que j'ai adoré faire :
