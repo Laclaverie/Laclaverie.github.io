@@ -35,6 +35,10 @@ Ce github sera divisé en trois thèmes, un projet peut avoir plusieurs tags :
 # Projet de programmation :
 
 - Trois mini-projets en Intelligence artificielle, Python. [github](https://github.com/Laclaverie/td-ia-uqac) Hiver 2022 (PGT)
+
 - Création d'une application téléphone, gallerie connectée, Ionic Angular. [github](https://github.com/Laclaverie/Krabbi) Été 2021 (PGT)
+
 - Recréer des chaines de contamination et calculer leurs poids, multithread en JAVA. [github](https://github.com/Laclaverie/hpp) Été 2021 (PGT) (#PGTM)
+
 - Création d'une application de chat, websockets, JS. [gitlab](https://code.telecomste.fr/laclaverie.pierre/projet_js) Hiver 2021 (PGT)
+
