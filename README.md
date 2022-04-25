@@ -11,7 +11,9 @@ Ce github sera divisé en trois thèmes, un projet peut avoir plusieurs tags :
 
 # Les projets de jeu vidéo : 
   - Qat Game, Unity 2D --Projet actuellement en train d'etre fait-- Hiver 2022 (JVX)(#JVX)
+
   - PsyHunt, Unity 3D [github](https://github.com/Laclaverie/PsyHunt) Automne 2021 (JVX)
+
   - Le plus long trajet en voiture, OpenCV, OpenGL, QT, C++. [github](https://github.com/Laclaverie/Voiture) Été 2021 (JVX) (TIM) (PGT)
 
 # Les projets de traitement de l'image : 
