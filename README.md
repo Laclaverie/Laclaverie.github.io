@@ -8,7 +8,7 @@ Je vous prie de m'excuser du dérangement occasionné
 
 Cordialement 
 
-Ce github sera divisé en deux thèmes, un projet peut avoir plusieurs tags :
+Ce github sera divisé en trois thèmes, un projet peut avoir plusieurs tags :
 - (JVX) : Jeu vidéo 
 - (TIM) : Traitement de l'image
 - (PGT) : Programmation "classique"
@@ -27,7 +27,7 @@ Ce github sera divisé en deux thèmes, un projet peut avoir plusieurs tags :
   - Astra Pioneers, segmentation de la peau pour controler un vaisseau spatial, OpenCv,OpenGL, C++, QT. [gitlab](https://code.telecomste.fr/laclaverie.pierre/astra-pioneers) (JVX) (TIM) (PGT) (#JVX) (#TIM)
   - Segmentation de roches et labellisations à l'aide du WaterShed. [github](https://github.com/Laclaverie/uqac-tni-watershed) (TIM)
 
-# Projet de programmation 
+# Projet de programmation :
 
 - Recréer des chaines de contamination et calculer leurs poids, multithread en JAVA. [github](https://github.com/Laclaverie/hpp) (PGT) (#PGTM)
 - Trois mini-projets en Intelligence artificielle, Python. [github](https://github.com/Laclaverie/td-ia-uqac) (PGT)
