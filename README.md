@@ -29,3 +29,4 @@ Ce github sera divisé en deux thèmes, un projet peut avoir plusieurs tags :
   - Trois mini-projets en Intelligence artificielle, Python. [github](https://github.com/Laclaverie/td-ia-uqac)
   - Création d'une application téléphone, gallerie connectée, Ionic Angular. [github](https://github.com/Laclaverie/Krabbi)
   - Création d'une application de chat, websockets, JS. [gitlab](https://code.telecomste.fr/laclaverie.pierre/projet_js)
+  - Astra Pioneers, segmentation de la peau pour controler un vaisseau spatial, OpenCv,OpenGL, C++, QT. [gitlab](https://code.telecomste.fr/laclaverie.pierre/astra-pioneers)
