@@ -21,7 +21,7 @@ Ce github sera divisé en deux thèmes, un projet peut avoir plusieurs tags :
 
 # Les projets de jeu vidéo : 
   - Qat Game, Unity 2D --Projet actuellement en train d'etre fait-- (JVX)(#JVX)
-  - PsyHunt, Unity 3D (JVX)
+  - PsyHunt, Unity 3D [github](https://github.com/Laclaverie/PsyHunt) de la présentation(JVX)
   - Le plus long trajet en voiture, OpenCV, OpenGL, QT, C++. [github](https://github.com/Laclaverie/Voiture) (JVX) (TIM) (PGT)
 
 # Les projets de traitement de l'image et programmation en général: 
