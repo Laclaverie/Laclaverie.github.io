@@ -24,8 +24,8 @@ Ce github sera divisé en deux thèmes, un projet peut avoir plusieurs tags :
 
 # Les projets de traitement de l'image et programmation en général: 
   - Utilisation des operateurs morphologique pour estimer la quantité d'espace non rangé dans un espace, python OpenCV. [github](https://github.com/Laclaverie/TNI-UAQC-TP1)
-  - Programmation multithread en JAVA [github](https://github.com/Laclaverie/hpp)
+  - Programmation multithread en JAVA. [github](https://github.com/Laclaverie/hpp)
   - Reconnaissance faciale, demande de consentement d'utilisation des données et Blockchain -- Projet en cours --
-  -  
+  - Trois mini-projets en Intelligence artificielle, Python. [github](https://github.com/Laclaverie/td-ia-uqac)
   
 
