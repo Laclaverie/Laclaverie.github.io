@@ -25,6 +25,8 @@ Ce github sera divisé en trois thèmes, un projet peut avoir plusieurs tags :
 
   - Astra Pioneers, segmentation de la peau pour controler un vaisseau spatial, OpenCv,OpenGL, C++, QT. [gitlab](https://code.telecomste.fr/laclaverie.pierre/astra-pioneers) Hiver 2021 (JVX) (TIM) (PGT) (#JVX) (#TIM)
 
+  - Projet Design x informatique, mesurer l'etat d'âme et la representer par une image, Python,Opencv, pyrebase,Vue,... [github](https://github.com/Laclaverie/design)
+
 # Projet de programmation :
 
 - Trois mini-projets en Intelligence artificielle, Python. [github](https://github.com/Laclaverie/td-ia-uqac) Hiver 2022 (PGT)
