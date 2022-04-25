@@ -27,5 +27,5 @@ Ce github sera divisé en deux thèmes, un projet peut avoir plusieurs tags :
   - Programmation multithread en JAVA. [github](https://github.com/Laclaverie/hpp)
   - Reconnaissance faciale, demande de consentement d'utilisation des données et Blockchain -- Projet en cours --
   - Trois mini-projets en Intelligence artificielle, Python. [github](https://github.com/Laclaverie/td-ia-uqac)
-  
-
+  - Création d'une application téléphone, gallerie connectée, Ionic Angular. [github](https://github.com/Laclaverie/Krabbi)
+  - Création d'une application de chat, websockets, JS. [gitlab](https://code.telecomste.fr/laclaverie.pierre/projet_js)
