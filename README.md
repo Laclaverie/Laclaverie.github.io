@@ -1,4 +1,4 @@
-# CV et portfolio à la fois
+# Portfolio de Pierre Laclaverie
 Bonjour, lectrices et lecteurs de ce README.md. Ici est concentré les liens vers les différents projets dont j'ai participé. Bonne lecture !
 
 Ce github sera divisé en trois thèmes, un projet peut avoir plusieurs tags :
