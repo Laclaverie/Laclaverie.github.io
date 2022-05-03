@@ -18,7 +18,7 @@ Ce github sera divisé en trois thèmes, un projet peut avoir plusieurs tags :
 
 # Les projets de traitement de l'image : 
 
-  - Génération d'images à l'aide de GAN, python tensorflow, keras.--Projet actuellement en train d'etre fait--  (TIM) (PGT)
+  - Génération d'images à l'aide de GAN, python tensorflow, keras.[github](https://github.com/Laclaverie/gan)  (TIM) (PGT)
   - Création d'un CNN et utilisation de transfert learning pour classification dataset "the simpsons". python, tensorflow, keras. [github](https://github.com/Laclaverie/cnn) Hiver 2022 (TIM)
   - Utilisation des operateurs morphologique pour estimer la quantité d'espace non rangé dans un espace, python OpenCV. [github](https://github.com/Laclaverie/TNI-UAQC-TP1) Hiver 2022 (TIM)  
   - Reconnaissance faciale, demande de consentement d'utilisation des données et Blockchain -- Projet en cours -- (TIM) (PGT)
