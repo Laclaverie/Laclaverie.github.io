@@ -3,7 +3,7 @@
 # Portfolio de Pierre Laclaverie
 
 Ce document sera divisé en trois thèmes (Jeux video, Traitement de l'image, Programmation), un projet peut avoir plusieurs tags :
-<center>
+<div align="center">
 
 | Tag | Definition |
 | :---:|:---:|
@@ -14,10 +14,11 @@ Ce document sera divisé en trois thèmes (Jeux video, Traitement de l'image, Pr
 |(#PGTM)|coup de coeur PGT|
 |(#JVX)|coup  de cœur JVX|
 
-</center>
+</div>
 
 ___
 # Projets de jeu vidéo : 
+<div align="center">
 
 | Nom du projet| Technologie| Code| Tag |Date de réalisation|
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -25,10 +26,12 @@ ___
 |PsyHunt| Unity 3D|[github](https://github.com/Laclaverie/PsyHunt)| (JVX) |Automne 2021|
 |Le plus long trajet en voiture|  OpenCV, OpenGL, QT, C++|[github](https://github.com/Laclaverie/Voiture)| JVX) (TIM) (PGT) |Été 2021|
 
+</div>
 ___
 
 # Projets de traitement de l'image : 
 
+<div align="center">
 
 | Nom du projet| Technologie| Code| Tag |Date de réalisation|
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -39,9 +42,13 @@ ___
 |Segmentation de roches et labellisations,  WaterShed| python,OpenCV | [github](https://github.com/Laclaverie/uqac-tni-watershed)| (TIM) |Hiver 2022|
 |Astra Pioneers, segmentation de la peau pour controler un vaisseau spatial|  OpenCv,OpenGL, C++, QT|[gitlab](https://code.telecomste.fr/laclaverie.pierre/astra-pioneers)  | (JVX) (TIM) (PGT) (#JVX) (#TIM) |Hiver 2021|
 |Projet Design x informatique, mesurer l'etat d'âme et la representer par une image|python,Opencv, pyrebase,VueJS| [github](https://github.com/Laclaverie/design) | (TIM) (PGT) |Automne 2020/Hiver 2021|
+
+</div>
+
 ___
 # Projet de programmation :
 
+<div align="center">
 
 | Nom du projet| Technologie| Code| Tag |Date de réalisation|
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -49,3 +56,4 @@ ___
 |Recréer des chaines de contamination, calcul des poids| JAVA|[github](https://github.com/Laclaverie/hpp)| (PGT) (#PGTM)|Été 2021|
 |Création d'une application de chat|JS|[gitlab](https://code.telecomste.fr/laclaverie.pierre/projet_js)| (PGT) |Hiver 2021|
 
+</div>
