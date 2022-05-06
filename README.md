@@ -2,6 +2,16 @@
 
 Ce document sera divisé en trois thèmes (Jeux video, Traitement de l'image, Programmation), un projet peut avoir plusieurs tags :
 
+# Sommaire 
+
+- [Portfolio de Pierre Laclaverie](#portfolio-de-pierre-laclaverie)
+- [Sommaire](#sommaire)
+- [Tags](#tags)
+- [Projets de jeu vidéo :](#projets-de-jeu-vidéo-)
+- [Projets de traitement de l'image](#projets-de-traitement-de-limage)
+- [Projets de programmation](#projets-de-programmation)
+
+# Tags
 
 | Tag | Definition |
 | :---:|:---:|
@@ -16,19 +26,15 @@ ___
 
 # Projets de jeu vidéo : 
 
-
 | Nom du projet| Technologie| Code| Tag |Date de réalisation|
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
 |Qat Game|Unity 2D|[itch](https://eyind.itch.io/qat)| (JVX)(#JVX) |Hiver 2022|
 |PsyHunt| Unity 3D|[github](https://github.com/Laclaverie/PsyHunt)| (JVX) |Automne 2021|
 |Le plus long trajet en voiture|  OpenCV, OpenGL, QT, C++|[github](https://github.com/Laclaverie/Voiture)| JVX) (TIM) (PGT) |Été 2021|
 
-
-
 ___
 
-# Projets de traitement de l'image : 
-
+# Projets de traitement de l'image  
 
 | Nom du projet| Technologie| Code| Tag |Date de réalisation|
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -43,8 +49,7 @@ ___
 
 ___
 
-# Projet de programmation :
-
+# Projets de programmation
 
 
 | Nom du projet| Technologie| Code| Tag |Date de réalisation|
