@@ -1,13 +1,17 @@
+<center>
+
 # Portfolio de Pierre Laclaverie
 
 Ce document sera divisé en trois thèmes (Jeux video, Traitement de l'image, Programmation), un projet peut avoir plusieurs tags :
 
-- (JVX) : Jeu vidéo 
-- (TIM) : Traitement de l'image
-- (PGT) : Programmation "classique"
-- (#TIM) : coups de cœur TIM
-- (#PGTM) : coup de coeur PGT
-- (#JVX) : coup  de cœur JVX
+| Tag | Definition |
+| :---:|:---:|
+|(JVX)|Jeu vidéo |
+|(TIM)|Traitement de l'image|
+|(PGT)|Programmation "classique"|
+|(#TIM)|coups de cœur TIM|
+|(#PGTM)|coup de coeur PGT|
+|(#JVX)|coup  de cœur JVX|
 
 ___
 # Projets de jeu vidéo : 
@@ -41,3 +45,5 @@ ___
 | Trois mini-projets en Intelligence artificielle| python|[github](https://github.com/Laclaverie/td-ia-uqac)| (PGT) |Hiver 2022|
 |Recréer des chaines de contamination, calcul des poids| JAVA|[github](https://github.com/Laclaverie/hpp)| (PGT) (#PGTM)|Été 2021|
 |Création d'une application de chat|JS|[gitlab](https://code.telecomste.fr/laclaverie.pierre/projet_js)| (PGT) |Hiver 2021|
+
+</center>
