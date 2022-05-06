@@ -1,8 +1,9 @@
-<center>
+
 
 # Portfolio de Pierre Laclaverie
 
 Ce document sera divisé en trois thèmes (Jeux video, Traitement de l'image, Programmation), un projet peut avoir plusieurs tags :
+<center>
 
 | Tag | Definition |
 | :---:|:---:|
@@ -12,6 +13,8 @@ Ce document sera divisé en trois thèmes (Jeux video, Traitement de l'image, Pr
 |(#TIM)|coups de cœur TIM|
 |(#PGTM)|coup de coeur PGT|
 |(#JVX)|coup  de cœur JVX|
+
+</center>
 
 ___
 # Projets de jeu vidéo : 
@@ -46,4 +49,3 @@ ___
 |Recréer des chaines de contamination, calcul des poids| JAVA|[github](https://github.com/Laclaverie/hpp)| (PGT) (#PGTM)|Été 2021|
 |Création d'une application de chat|JS|[gitlab](https://code.telecomste.fr/laclaverie.pierre/projet_js)| (PGT) |Hiver 2021|
 
-</center>
