@@ -7,7 +7,7 @@ Ce document sera divisé en trois thèmes (Jeux video, Traitement de l'image, Pr
 - [Portfolio de Pierre Laclaverie](#portfolio-de-pierre-laclaverie)
 - [Sommaire](#sommaire)
 - [Tags](#tags)
-- [Projets de jeu vidéo ](#projets-de-jeu-vidéo)
+- [Projets de jeu vidéo](#projets-de-jeu-vidéo)
 - [Projets de traitement de l'image](#projets-de-traitement-de-limage)
 - [Projets de programmation](#projets-de-programmation)
 

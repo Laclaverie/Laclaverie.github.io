@@ -1,118 +1,254 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Pierre Lavlaverie</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-    <title>Three Column Portfolio Template for Bootstrap 3</title>
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Mon portfolio</h1>
+						<p>Ceci est une présentation des projets que j'ai pu réaliser </p>
+						<ul class="actions">
+							<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
 
-    <!-- Custom CSS for the '3 Col Portfolio' Template -->
-    <link href="css/3-col-portfolio.css" rel="stylesheet">
-  </head>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Mes réalisations</a></li>
+							<!--<li><a href="generic.html">Courte présentation</a></li>
+							<li><a href="elements.html">Elements Reference</a></li>-->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/pierre-laclaverie/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/Laclaverie/Laclaverie.github.io" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
 
-  <body>
+				<!-- Main -->
+					<div id="main">
 
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="http://startbootstrap.com">Start Bootstrap</a>
-        </div>
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2>Pierre Laclaverie</h2>
+									<p>Je suis actuellement étudiant en recherche de stage de fin d'études. Les Jeux vidéos et le traitement d'images sont les deux domaines qui m'interesse le plus.</p>
+									<ul class="actions">
+										<li><a href="#JV" class="button">Jeux vidéos</a></li>
+										<li><a href="#TNI" class="button">Traitement de l'image</a></li>
+										<li><a href="#PROG" class="button">Programmation</a></li>
+									</ul>
+								</header>
+								
+								<h2 id ="JV">Jeux vidéos</h2>
+								<h2>Qat Game</h2>
+								<p>Qat Game est le projet que j'ai apprécié faire. C'est un jeu narratif 2D fait avec Unity. En voici un aperçu.</p>
+								<a href="https://youtu.be/65I0DkzfGa8" class="image main"><img src="images/JV/qat.jpg" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://eyind.itch.io/qat" class="button large">Voir le projet</a></li>
+								</ul>
+							</article>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-    </nav>
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">Automne 2021</span>
+										<h2>Psyhunt</h2>
+									</header>
+									<a class="image fit"><img src="images/JV/Psyhunt.jpg" alt="" /></a>
+									<p>Prototype de jeu 3D futuriste d'infiltration. Unity3D.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Laclaverie/PsyHunt" class="button">Voir le projet</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Été 2021</span>
+										<h2>Le plus long trajet</h2>
+									</header>
+									<a class="image fit"><img src="images/JV/voitureInterface.png" alt="" /></a>
+									<p>Realisé en C++ OpenCV OpenGL, l'objectif est de controller une voiture virtuelle et de rester le plus longtemps dessus.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Laclaverie/Voiture" class="button">Voir le projet</a></li>
+									</ul>
+								</article>
+							</section>
+							<h2 id ="TNI">Traitement de l'image</h2>
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">Hiver 2022</span>
+										<h2>Génération d'images avec un GAN</h2>
+									</header>
+									<a class="image fit"><img src="images/TNI/GAN.png" alt="" /></a>
+									<p>Entrainement d'un GAN sur un dataset d'images de faces d'animés pour en générer de nouvelles. Python, tensorflow</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Laclaverie/gan" class="button">Voir le projet</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Hiver 2022</span>
+										<h2>Catégorisation grâce aux réseaux de neurones</h2>
+									</header>
+									<a class="image fit"><img src="images/TNI/transfertLearning.jpg" alt="" /></a>
+									<p>Utilisation de transfert Learning ainsi que création d'un réseau de neurones from scratch pour catégoriser des images d'un dataset de "The Simpsons". Python, Tensorflow, keras.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Laclaverie/cnn" class="button">Voir le projet</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Hiver 2022</span>
+										<h2>Estimer le taux de rangement d'une piece</h2>
+									</header>
+									<a class="image fit"><img src="images/TNI/rangement.jpg" alt="" /></a>
+									<p>Utilisation des opérateurs morphologiques pour estimer les différences entre les images. Python, OpenCV</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Laclaverie/TNI-UAQC-TP1" class="button">Voir le projet</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Hiver 2022</span>
+										<h2>Reconnaissance faciale et blockchain</h2>
+									</header>
+									<a class="image fit"><img src="images/TNI/recognize .jpg" alt="" /></a>
+									<p>Reconnaitre le visage d'une personne dans un flux vidéo et l'avertir par e-mail. Stocker sa réponse dans une blockchan. python,OpenCv,face-recognition,Web, SQL</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Laclaverie/blockchain" class="button">Voir le projet</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Hiver 2022</span>
+										<h2>Segmentation de roches</h2>
+									</header>
+									<a class="image fit"><img src="images/TNI/watershed.jpg" alt="" /></a>
+									<p>Segmenter des roches pour recupérer leurs caractéristiques. Plusieurs techniques ont été testées, ici le watershed. Python, OpenCV</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Laclaverie/uqac-tni-watershed" class="button">Voir le projet</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Hiver 2021</span>
+										<h2>Astra Pioneers</h2>
+									</header>
+									<a class="image fit"><img src="images/TNI/AstraP.jpg" alt="" /></a>
+									<a class="image fit"><img src="images/TNI/AstraPR.png" alt="" /></a>
+									<p>Projet non terminé consistant à piloter un vaisseau spatial à l'aide de ses mains. Les commandes sont les formes que l'on voit en fond, la position des mains ainsi que leur état (ouvertes, fermées) déclenchent des commandes pour le vaisseau. </p>
+									<ul class="actions special">
+										<li><a href="https://code.telecomste.fr/laclaverie.pierre/astra-pioneers" class="button">Voir le projet</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Automne 2020</span>
+										<h2>Color your mood</h2>
+									</header>
+									<a class="image fit"><img src="images/TNI/ColorMood.jpg" alt="" /></a>
+									<p>Projet Télécom Saint Etienne x Biennale du Design. L'utilisateur interagit avec une caméra et le programme dessine à l'écran une représentation de son état.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Laclaverie/design" class="button">Voir le projet</a></li>
+									</ul>
+								</article>
+							</section>
+						<h2 id ="PROG">Programmation</h2>
+						<section class="posts">
+							<article>
+								<header>
+									<span class="date">Hiver 2022</span>
+									<h2>Trois mini projets en Intelligence artificielle</h2>
+								</header>
+								<a class="image fit"><img src="images/PROG/MINIP1.jpg" alt="" /></a>
+								<p>Codage d'un agent robot aspirateur. Il doit aspirer des poussières, récupérer des diamants. L'environnement est mis a jour aleatoirement. La première partie le robot explore de manière non informée puis construit son environnement. Il utilise ensuite A* pour déterminer les meilleurs chemins.
+								</p>
+								<a class="image fit"><img src="images/PROG/MINIP2.jpg" alt="" /></a>
+								<p>Resolution automatique de Sudoku</p>
+								<a class="image fit"><img src="images/PROG/MINIP3.jpg" alt="" /></a>
+								<p>Secourrir une personne dans une maison en feu. Il y a des foyers qui emettent de la chaleur, des decombres qui emettent de la poussiere et une personne qui emet des cris.</p>
 
-    <div class="container">
+								<ul class="actions special">
+									<li><a href="https://github.com/Laclaverie/td-ia-uqac" class="button">Voir le projet</a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<span class="date">Été 2021</span>
+									<h2>Recréer des chaines de contamination</h2>
+								</header>
+								<a class="image fit"><img src="images/PROG/lineaire.png" alt="" /></a>
+								<p>Fait pour le cours de programmation haute performance, la solution permet de traiter des données présentes dans un fichier CSV de 1 millions d'entrées en environ 7 secondes. Méthode de complexité linéaire à priori. Java</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Laclaverie/Voiture" class="button">Voir le projet</a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<span class="date">Hiver 2021</span>
+									<h2>Application de chat Web</h2>
+								</header>
+								<a class="image fit"><img src="images/PROG/chat.png" alt="" /></a>
+								<p>Fait en HTML, CSS, JS avec websocket. On peut se connecter avec des salons différents, un message d'entée et un message de sortie quand on accède/sort du salon.</p>
+								<ul class="actions special">
+									<li><a href="https://code.telecomste.fr/laclaverie.pierre/projet_js" class="button">Voir le projet</a></li>
+								</ul>
+							</article>
+						</section>
+					</div>
 
-      <div class="row">
+				<!-- Footer -->
+					<footer id="footer">
 
-        <div class="col-lg-12">
-          <h1 class="page-header">3 Col Portfolio <small>Showcase Your Work</small></h1>
-        </div>
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:pierre.laclaverie@gmail.com">pierre.laclaverie@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/pierre-laclaverie/" class="icon brands alt fa-linkedin"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/Laclaverie/Laclaverie.github.io" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
 
-      </div>
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul>
+							<li>&copy; Pierre Laclaverie</li>
+							<li><a href="https://github.com/Laclaverie/Laclaverie.github.io">Version simplifiee</a></li>		
+						</ul>
+					</div>
 
-      <div class="row">
+			</div>
 
-        <div class="col-md-4 portfolio-item">
-          <a href="#project-link"><img class="img-responsive" src="http://placehold.it/700x400"></a>
-          <h3><a href="#project-link">Project Name</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-        <div class="col-md-4 portfolio-item">
-          <a href="#project-link"><img class="img-responsive" src="http://placehold.it/700x400"></a>
-          <h3><a href="#project-link">Project Name</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-
-        <div class="col-md-4 portfolio-item">
-          <a href="#project-link"><img class="img-responsive" src="http://placehold.it/700x400"></a>
-          <h3><a href="#project-link">Project Name</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-
-      </div>
-
-      <hr>
-
-      <div class="row text-center">
-        
-        <div class="col-lg-12">
-          <ul class="pagination">
-            <li><a href="#">&laquo;</a></li>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">&raquo;</a></li>
-          </ul>        
-        </div>
-
-      </div>
-
-    </div><!-- /.container -->
-
-    <div class="container">
-
-      <hr>
-
-      <footer>
-        <div class="row">
-          <div class="col-lg-12">
-            <p>Copyright &copy; Company <span id="getCurrentDate"></span></p>
-          </div>
-        </div>
-      </footer>
-      
-    </div><!-- /.container -->
-
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script type="text/javascript">
-      var dt = new Date();
-      document.getElementById('getCurrentDate').innerHTML = dt.getFullYear();
-    </script>
-  </body>
-
+	</body>
 </html>
