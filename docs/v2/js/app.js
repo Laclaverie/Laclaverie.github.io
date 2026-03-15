@@ -4,20 +4,33 @@ const LANGUAGES = ['fr', 'en'];
 
 // Coursework Data
 const courseworkData = {
-	featured: [
-		{ code: '8INF960', titleFr: 'Principes de conception/dév. jeux vidéo', titleEn: 'Video Game Design/Dev Principles', grade: 4.0 },
-		{ code: '8INF871', titleFr: 'Principes des moteurs de jeux', titleEn: 'Game Engine Principles', grade: 4.0 },
-		{ code: '8INF957', titleFr: 'Programmation objet avancée', titleEn: 'Advanced Object-Oriented Programming', grade: 4.3 },
-		{ code: '8INF804', titleFr: 'Vision artificielle et traitement des images', titleEn: 'Computer Vision and Image Processing', grade: 4.0 },
-		{ code: '8INF846', titleFr: 'Intelligence artificielle', titleEn: 'Artificial Intelligence', grade: 4.0 },
-		{ code: '8INF962', titleFr: 'Atelier pratique en jeux vidéo ', titleEn: 'Practical Workshop Video Games', grade: 4.3 },
-		{ code: '8IAR125', titleFr: 'Intelligence artificielle pour le jeu vidéo', titleEn: 'AI for Video Games', grade: 4.3 }
-	],
-	other: [
-		{ code: '8INF862', titleFr: 'Gestion de projets informatiques', titleEn: 'IT Project Management', grade: 3.7 },
-		{ code: '8INF912', titleFr: 'Sujet spécial en informatique II', titleEn: 'Special Topics in IT II', grade: 3.3 },
-		{ code: '8INF840', titleFr: 'Structures de données avancées & algorithmes', titleEn: 'Advanced Data Structures & Algorithms', grade: 3.0 }
-	]
+	uqac: {
+		featured: [
+			{ code: '8INF960', titleFr: 'Principes de conception/dév. jeux vidéo', titleEn: 'Video Game Design/Dev Principles' },
+			{ code: '8INF871', titleFr: 'Principes des moteurs de jeux', titleEn: 'Game Engine Principles' },
+			{ code: '8INF957', titleFr: 'Programmation objet avancée', titleEn: 'Advanced Object-Oriented Programming' },
+			{ code: '8INF804', titleFr: 'Vision artificielle et traitement des images', titleEn: 'Computer Vision and Image Processing' },
+			{ code: '8INF846', titleFr: 'Intelligence artificielle', titleEn: 'Artificial Intelligence' },
+			{ code: '8INF962', titleFr: 'Atelier pratique en jeux vidéos I', titleEn: 'Practical Workshop Video Games I' },
+			{ code: '8IAR125', titleFr: 'Intelligence artificielle pour le jeu vidéo', titleEn: 'Artificial Intelligence for Video Games' }
+		],
+		other: [
+			{ code: '8INF862', titleFr: 'Gestion de projets informatiques', titleEn: 'IT Project Management' },
+			{ code: '8INF912', titleFr: 'Sujet spécial en informatique II', titleEn: 'Special Topics in IT II' },
+			{ code: '8INF840', titleFr: 'Structures de données avancées & leurs algorithmes', titleEn: 'Advanced Data Structures & Algorithms' }
+		]
+	},
+	tse: {
+		featured: [
+			{ code: 'INFAAS7', titleFr: 'Algorithmie avancée', titleEn: 'Advanced Algorithms' },
+			{ code: 'IMGPAIS7', titleFr: 'Projet d\'analyse d\'image', titleEn: 'Image Analysis Project' },
+			{ code: 'IMGTIS7', titleFr: 'Traitement d\'image', titleEn: 'Image Processing' },
+			{ code: 'IMGMMS7', titleFr: 'Morphologie mathématiques', titleEn: 'Mathematical Morphology' },
+			{ code: '48BDDS7', titleFr: 'Bases de données', titleEn: 'Databases' },
+			{ code: 'O-INFPHP', titleFr: 'Programmation haute performance', titleEn: 'High Performance Computing' },
+			{ code: 'O-INFPRO', titleFr: 'Projet High Performance Computing', titleEn: 'HPC Project' }
+		]
+	}
 };
 
 // Language functionality
@@ -97,79 +110,61 @@ function renderCoursework() {
 	const container = document.getElementById('coursework-container');
 	if (!container) return;
 
-	const mastersTitle = lang === 'fr' ? translations.fr.masters : translations.en.masters;
+	// Translations
+	const uqacTitle = lang === 'fr' ? translations.fr.masters : translations.en.masters;
 	const uqacLocation = 'Université du Québec à Chicoutimi (UQAC)';
+	const tseTitle = lang === 'fr' ? 'Ingénieur Informatique - Traitement d\'Images' : 'Computer Science Engineer - Image Processing';
+	const tseLocation = 'Télécom Saint Etienne';
 	const titleFeatured = lang === 'fr' ? 'Cours pertinents' : 'Relevant Courses';
 	const titleOther = lang === 'fr' ? 'Autres cours' : 'Other Courses';
-	const gradeLabel = lang === 'fr' ? 'Note' : 'Grade';
 
-	// Create course names list for preview
-	const courseNames = courseworkData.featured.map(c => lang === 'fr' ? c.titleFr : c.titleEn).join(', ');
-
-	// Create full HTML with expandable card
-	let html = `<div class="experience-card coursework-card">
-		<div class="coursework-header-clickable" onclick="toggleExpandCard(this.closest('.coursework-card'))">
-			<div class="experience-card-header">
-				<h3>${mastersTitle}</h3>
-				<div class="experience-card-toggle">▼</div>
+	// Helper function to create coursework card HTML
+	function createCourseCard(title, location, courses, isFeaturedOnly = true) {
+		const courseNames = courses.map(c => lang === 'fr' ? c.titleFr : c.titleEn).join(', ');
+		
+		let cardHtml = `<div class="experience-card coursework-card">
+			<div class="coursework-header-clickable" onclick="toggleExpandCard(this.closest('.coursework-card'))">
+				<div class="experience-card-header">
+					<h3>${title}</h3>
+					<div class="experience-card-toggle">▼</div>
+				</div>
+				<p class="experience-company">${location}</p>
+				<p class="coursework-preview">${courseNames}</p>
 			</div>
-			<p class="experience-company">${uqacLocation}</p>
-			<p class="coursework-preview">${courseNames}</p>
-		</div>
-		<div class="experience-details">
-			<div class="coursework-section">
-				<h4>${titleFeatured}</h4>
-				<table class="course-table">
-					<thead>
-						<tr>
-							<th class="course-cell">Code</th>
-							<th class="course-cell">${lang === 'fr' ? 'Titre' : 'Title'}</th>
-							<th class="course-cell">${gradeLabel}</th>
-						</tr>
-					</thead>
-					<tbody>`;
+			<div class="experience-details">
+				<div class="coursework-section">
+					<h4>${titleFeatured}</h4>
+					<table class="course-table">
+						<thead>
+							<tr>
+								<th class="course-cell">Code</th>
+								<th class="course-cell">${lang === 'fr' ? 'Titre' : 'Title'}</th>
+							</tr>
+						</thead>
+						<tbody>`;
 
-	courseworkData.featured.forEach(course => {
-		const courseTitle = lang === 'fr' ? course.titleFr : course.titleEn;
-		const gradeClass = course.grade >= 4.0 ? 'excellent' : '';
-		html += `<tr class="course-row">
-			<td class="course-cell course-code">${course.code}</td>
-			<td class="course-cell course-name">${courseTitle}</td>
-			<td class="course-cell course-grade ${gradeClass}">${course.grade}</td>
-		</tr>`;
-	});
+		courses.forEach(course => {
+			const courseTitle = lang === 'fr' ? course.titleFr : course.titleEn;
+			cardHtml += `<tr class="course-row">
+				<td class="course-cell course-code">${course.code}</td>
+				<td class="course-cell course-name">${courseTitle}</td>
+			</tr>`;
+		});
 
-	html += `</tbody>
+		cardHtml += `</tbody>
 					</table>
+				</div>
 			</div>
-			
-			<div class="coursework-section">
-				<h4>${titleOther}</h4>
-				<table class="course-table">
-					<thead>
-						<tr>
-							<th class="course-cell">Code</th>
-							<th class="course-cell">${lang === 'fr' ? 'Titre' : 'Title'}</th>
-							<th class="course-cell">${gradeLabel}</th>
-						</tr>
-					</thead>
-					<tbody>`;
+		</div>`;
 
-	courseworkData.other.forEach(course => {
-		const courseTitle = lang === 'fr' ? course.titleFr : course.titleEn;
-		const gradeClass = course.grade >= 4.0 ? 'excellent' : '';
-		html += `<tr class="course-row">
-			<td class="course-cell course-code">${course.code}</td>
-			<td class="course-cell course-name">${courseTitle}</td>
-			<td class="course-cell course-grade ${gradeClass}">${course.grade}</td>
-		</tr>`;
-	});
+		return cardHtml;
+	}
 
-	html += `</tbody>
-					</table>
-			</div>
-		</div>
-	</div>`;
+	// Build UQAC section with featured courses
+	let html = createCourseCard(uqacTitle, uqacLocation, courseworkData.uqac.featured);
+
+	// Build TSE section with featured courses
+	html += createCourseCard(tseTitle, tseLocation, courseworkData.tse.featured);
 
 	container.innerHTML = html;
 }
