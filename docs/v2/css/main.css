@@ -327,6 +327,30 @@ section h2 {
 	display: block;
 }
 
+.project-links {
+	margin-top: 16px;
+	padding-top: 12px;
+	border-top: 1px solid var(--border);
+}
+
+.project-link {
+	display: inline-block;
+	padding: 8px 16px;
+	background: var(--accent);
+	color: white;
+	text-decoration: none;
+	border-radius: 4px;
+	font-size: 0.9em;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	margin-right: 8px;
+}
+
+.project-link:hover {
+	background: var(--accent-light);
+	box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
 /* Coursework */
 #coursework-container {
 	margin: 24px 0;
