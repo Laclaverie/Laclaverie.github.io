@@ -5,12 +5,38 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	head>
+	<head>
 		<title>Pierre Lavlaverie</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.language-toggle {
+				display: flex;
+				gap: 8px;
+				align-items: center;
+				margin-top: 10px;
+			}
+			.lang-btn {
+				padding: 6px 12px;
+				border: 1px solid #ccc;
+				background: #fff;
+				cursor: pointer;
+				border-radius: 4px;
+				font-size: 0.9em;
+				transition: all 0.3s ease;
+			}
+			.lang-btn:hover {
+				background: #f0f0f0;
+				border-color: #999;
+			}
+			.lang-btn.active {
+				background: #0066cc;
+				color: #fff;
+				border-color: #0066cc;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -34,10 +60,12 @@
 							<!--<li><a href="elements.html">Elements Reference</a></li>-->
 						</ul>
 						<ul class="icons">
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/pierre-laclaverie/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
-								<li><a href="https://github.com/Laclaverie/Laclaverie.github.io" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
+							<li class="language-toggle">
+								<button class="lang-btn active" data-lang-toggle="fr" onclick="toggleLanguage('fr')">FR</button>
+								<button class="lang-btn" data-lang-toggle="en" onclick="toggleLanguage('en')">EN</button>
+							</li>
+							<li><a href="https://www.linkedin.com/in/pierre-laclaverie/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/Laclaverie/Laclaverie.github.io" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 				<!-- Main -->
@@ -123,6 +151,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/language-toggle.js"></script>
 
 	</body>
 </html>
