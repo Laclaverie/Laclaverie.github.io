@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Pierre Laclaverie - CV</title>
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<header>
+		<div class="header-container">
+			<div class="header-left">
+				<h1 data-i18n="name">Pierre Laclaverie</h1>
+				<p data-i18n="role">Programmeur généraliste</p>
+			</div>
+			<div class="controls">
+				<div class="toggle-group">
+					<button class="toggle-btn active" data-lang-toggle="fr" onclick="toggleLanguage('fr')">FR</button>
+					<button class="toggle-btn" data-lang-toggle="en" onclick="toggleLanguage('en')">EN</button>
+				</div>
+				<div class="toggle-group">
+					<button class="toggle-btn active" data-version-toggle="default" onclick="toggleVersion('default')">Default</button>
+					<button class="toggle-btn" data-version-toggle="generalist" onclick="toggleVersion('generalist')">Generalist</button>
+					<button class="toggle-btn" data-version-toggle="qa-tools" onclick="toggleVersion('qa-tools')">QA</button>
+				</div>
+				<button class="theme-toggle" onclick="toggleTheme()" title="Toggle personal theme">🎮</button>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!-- Profile Section -->
+		<section class="profile">
+			<h3 data-i18n="profileTitle">Profil</h3>
+			<p data-i18n="profileDesc">Programmeur généraliste passionné par la création d'outils et l'automatisation. Fort d'une expérience chez Ubisoft en assurance qualité et chez Matrox en développement logiciel, je maîtrise l'ensemble du cycle de développement, du prototypage à la production.</p>
+			
+			<div class="profile-skills">
+				<div class="skill-item">
+					<strong data-i18n="skillsProgramming">Programmation:</strong>
+					<p>C++, Python, Java, JavaScript</p>
+				</div>
+				<div class="skill-item">
+					<strong data-i18n="skillsTools">Outils & Frameworks:</strong>
+					<p>CI/CD, GitHub, Testing Frameworks</p>
+				</div>
+				<div class="skill-item">
+					<strong data-i18n="skillsLanguages">Langues:</strong>
+					<p>Français (natif), Anglais (professionnel)</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience Section -->
+		<section data-version="all">
+			<h2 data-i18n="experience">Expérience Professionnelle</h2>
+
+			<!-- Ubisoft -->
+			<div class="experience-item" data-version="all qa-tools default">
+				<div class="experience-header">
+					<div>
+						<h3 data-i18n="ubisoft">Programmeur Généraliste - Assurance Qualité</h3>
+						<p class="company">Ubisoft Montréal</p>
+					</div>
+					<div class="date">Mai 2023 – Présent</div>
+				</div>
+				<p class="company" data-i18n="qaGeneral">Développement d'outils et frameworks pour l'automatisation des tests</p>
+				<ul>
+					<li class="achievement" data-version="all qa-tools default" data-i18n="ubi1">Création d'une validation automatisée de la santé des NPC pour Assassin's Creed Shadows</li>
+					<li class="achievement" data-version="all default generalist" data-i18n="ubi2">Amélioration des frameworks de tests supportés par Anvil Pipeline</li>
+					<li class="achievement" data-version="all default" data-i18n="ubi3">Développement d'outils de monitoring pour l'assurance qualité</li>
+					<li class="achievement" data-version="all generalist" data-i18n="ubi4">Automatisation de tâches répétitives avec Python et scripts CI/CD</li>
+				</ul>
+			</div>
+
+			<!-- Matrox -->
+			<div class="experience-item" data-version="all">
+				<div class="experience-header">
+					<div>
+						<h3 data-i18n="matrox">Stagiaire Développement Logiciel</h3>
+						<p class="company">Matrox Imaging (Zebra)</p>
+					</div>
+					<div class="date">Octobre 2022 – Avril 2023</div>
+				</div>
+				<p class="company" data-i18n="matroxRole">Implémentation d'algorithmes de filtrage d'images en production</p>
+				<ul>
+					<li class="achievement" data-i18n="mat1">Développement de deux algorithmes de filtrage basés sur des papiers de recherche</li>
+					<li class="achievement" data-i18n="mat2">Intégration dans la Matrox Image Library (C++)</li>
+					<li class="achievement" data-i18n="mat3">Création de tests unitaires et performance monitoring</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section>
+			<h2 data-i18n="projects">Projets Clés</h2>
+			<div class="projects-grid">
+				<!-- NPC Validation (QA Tools) -->
+				<div class="project-card" data-version="all qa-tools default">
+					<h3 data-i18n="npcValidation">Validation Automatisée NPC</h3>
+					<span class="date" data-i18n="dateQA">2023-2025</span>
+					<p data-i18n="npcValidationDesc">Outil de validation automatisée de la santé des NPC pour Assassin's Creed Shadows. Détection automatique d'anomalies et génération de tickets de suivi.</p>
+				</div>
+
+				<!-- Supermarket App (Generalist) -->
+				<div class="project-card" data-version="all generalist default">
+					<h3 data-i18n="supermarketApp">Application Prix Supermarché</h3>
+					<span class="date" data-i18n="datePersonal">2024 (4 mois)</span>
+					<p data-i18n="supermarketDesc">Prototype end-to-end: application Android, backend en base de données, scripts de déploiement CI/CD. Architecture monorepo avec automatisation complète.</p>
+				</div>
+				<!-- GAN (Image Processing) -->
+				<div class="project-card" data-version="all default">
+					<h3 data-i18n="ganProject">Génération d'Images avec GAN</h3>
+					<span class="date" data-i18n="dateGAN">2022</span>
+					<p data-i18n="ganDesc">Entraînement d'un GAN sur dataset de faces d'animés. Python, TensorFlow, optimisation pour qualité et performances.</p>
+				</div>  
+		</section>
+
+		<!-- Education -->
+		<section data-version="all">
+			<h2 data-i18n="education">Formation</h2>
+			<div class="experience-item">
+				<h3 data-i18n="masters">Maîtrise en Informatique - Option Jeux Vidéo</h3>
+				<p class="company">Université du Québec à Chicoutimi (UQAC)</p>
+			</div>
+			<div class="experience-item">
+				<h3 data-i18n="engineer">Ingénieur Informatique - Traitement d'Images</h3>
+				<p class="company">Télécom Saint Etienne</p>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="social-links">
+			<a href="https://www.linkedin.com/in/pierre-laclaverie/">LinkedIn</a>
+			<a href="https://github.com/Laclaverie">GitHub</a>
+			<a href="mailto:pierre.laclaverie@gmail.com">Email</a>
+		</div>
+		<p>&copy; 2024 Pierre Laclaverie. <a href="../index.html">Back to Home</a></p>
+	</footer>
+
+	<script src="js/translations.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
