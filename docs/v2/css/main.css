@@ -161,56 +161,103 @@ section h2 {
 	color: var(--accent);
 }
 
-/* Experience */
-.experience-item {
-	margin-bottom: 32px;
-	padding-bottom: 24px;
-	border-bottom: 1px solid var(--border);
+/* Experience Grid */
+.experience-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 20px;
 }
 
-.experience-item:last-child {
-	border-bottom: none;
+/* Experience Card */
+.experience-card {
+	background: var(--bg-light);
+	padding: 24px;
+	border-radius: 8px;
+	border: 1px solid var(--border);
+	cursor: pointer;
+	transition: all 0.3s ease;
 }
 
-.experience-header {
+.experience-card:hover {
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+	border-color: var(--accent);
+}
+
+.experience-card-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-bottom: 12px;
-	gap: 16px;
-	flex-wrap: wrap;
+	margin-bottom: 8px;
+	gap: 12px;
 }
 
-.experience-header h3 {
-	font-size: 1.3em;
+.experience-card-header h3 {
+	font-size: 1.1em;
 	color: var(--primary);
 	margin: 0;
+	flex: 1;
 }
 
-.date {
-	color: var(--text-light);
-	font-size: 0.95em;
-	min-width: fit-content;
+.experience-card-toggle {
+	font-size: 1.5em;
+	color: var(--accent);
+	min-width: 20px;
+	text-align: right;
+	transition: transform 0.3s ease;
 }
 
-.company {
+.experience-card.expanded .experience-card-toggle {
+	transform: rotate(180deg);
+}
+
+.experience-company {
 	color: var(--accent);
 	font-weight: 600;
+	font-size: 0.95em;
 	margin-bottom: 4px;
 }
 
-.achievement {
-	margin: 12px 0 12px 24px;
-	padding-left: 16px;
-	border-left: 2px solid var(--border);
+.experience-date {
 	color: var(--text-light);
+	font-size: 0.9em;
+	margin-bottom: 12px;
+}
+
+.experience-description {
+	color: var(--text);
+	font-size: 0.95em;
+	margin-bottom: 12px;
+}
+
+.experience-details {
+	display: none;
+	margin-top: 16px;
+	padding-top: 16px;
+	border-top: 1px solid var(--border);
+}
+
+.experience-card.expanded .experience-details {
+	display: block;
+}
+
+.experience-details ul {
+	list-style: none;
+	padding: 0;
+}
+
+.achievement {
+	margin: 12px 0;
+	padding-left: 16px;
+	border-left: 2px solid var(--accent);
+	color: var(--text-light);
+	font-size: 0.95em;
 }
 
 /* Projects */
 .projects-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	gap: 24px;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 20px;
 }
 
 .project-card {
@@ -218,6 +265,7 @@ section h2 {
 	padding: 24px;
 	border-radius: 8px;
 	border: 1px solid var(--border);
+	cursor: pointer;
 	transition: all 0.3s ease;
 }
 
@@ -226,19 +274,163 @@ section h2 {
 	border-color: var(--accent);
 }
 
-.project-card h3 {
-	color: var(--primary);
+.project-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 	margin-bottom: 8px;
+	gap: 12px;
 }
 
-.project-card .date {
+.project-card h3 {
+	color: var(--primary);
+	margin: 0;
+	font-size: 1.1em;
+	flex: 1;
+}
+
+.project-card-toggle {
+	font-size: 1.5em;
+	color: var(--accent);
+	min-width: 20px;
+	text-align: right;
+	transition: transform 0.3s ease;
+}
+
+.project-card.expanded .project-card-toggle {
+	transform: rotate(180deg);
+}
+
+.project-date {
+	color: var(--text-light);
+	font-size: 0.9em;
+	margin-bottom: 12px;
 	display: block;
+}
+
+.project-description {
+	color: var(--text);
+	font-size: 0.95em;
 	margin-bottom: 12px;
 }
 
-.project-card p {
+.project-details {
+	display: none;
+	margin-top: 16px;
+	padding-top: 16px;
+	border-top: 1px solid var(--border);
 	color: var(--text-light);
 	font-size: 0.95em;
+}
+
+.project-card.expanded .project-details {
+	display: block;
+}
+
+/* Coursework */
+#coursework-container {
+	margin: 24px 0;
+}
+
+.coursework-card {
+	margin-bottom: 20px;
+}
+
+.coursework-header-clickable {
+	cursor: pointer;
+	user-select: none;
+	transition: background 0.2s ease;
+}
+
+.coursework-header-clickable:hover {
+	background: rgba(52, 152, 219, 0.05);
+}
+
+.coursework-preview {
+	color: var(--text-light);
+	font-size: 0.9em;
+	line-height: 1.4;
+	margin: 8px 0;
+	pointer-events: none;
+}
+
+.coursework-section {
+	margin-bottom: 24px;
+}
+
+.coursework-section h4 {
+	font-size: 0.95em;
+	font-weight: 600;
+	color: var(--primary);
+	margin-bottom: 12px;
+	margin-top: 16px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid var(--accent);
+}
+
+.coursework-section:first-child h4 {
+	margin-top: 0;
+}
+
+.course-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.9em;
+}
+
+.course-table thead tr {
+	background: var(--bg-light);
+	border-bottom: 2px solid var(--border);
+}
+
+.course-table thead th {
+	padding: 12px;
+	text-align: left;
+	font-weight: 600;
+	color: var(--primary);
+}
+
+.course-row {
+	border-bottom: 1px solid var(--border);
+	transition: background 0.2s ease;
+}
+
+.course-row:hover {
+	background: var(--bg-light);
+}
+
+.course-row:last-child {
+	border-bottom: none;
+}
+
+.course-cell {
+	padding: 10px 12px;
+	text-align: left;
+	color: var(--text);
+}
+
+.course-code {
+	font-weight: 600;
+	color: var(--accent);
+	min-width: 80px;
+}
+
+.course-name {
+	flex: 1;
+}
+
+.course-grade {
+	font-weight: 600;
+	color: var(--primary);
+	min-width: 50px;
+}
+
+.course-grade.excellent {
+	color: var(--accent);
+}
+
+.course-grade.excellent {
+	color: #27ae60;
 }
 
 /* Footer */
@@ -302,11 +494,43 @@ footer {
 		justify-content: space-between;
 	}
 
-	.experience-header {
+	.experience-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.experience-card-header {
 		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.experience-card-toggle {
+		text-align: left;
+		margin-top: 8px;
 	}
 
 	.projects-grid {
 		grid-template-columns: 1fr;
+	}
+
+	.project-card-header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.project-card-toggle {
+		text-align: left;
+		margin-top: 8px;
+	}
+
+	.course-table {
+		font-size: 0.85em;
+	}
+
+	.course-cell {
+		padding: 8px;
+	}
+
+	.course-name {
+		max-width: 200px;
 	}
 }

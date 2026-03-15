@@ -37,11 +37,11 @@
 			<div class="profile-skills">
 				<div class="skill-item">
 					<strong data-i18n="skillsProgramming">Programmation:</strong>
-					<p>C++, Python, Java, JavaScript</p>
+					<p>C++, Python, Java, Rust (beginner)</p>
 				</div>
 				<div class="skill-item">
 					<strong data-i18n="skillsTools">Outils & Frameworks:</strong>
-					<p>CI/CD, GitHub, Testing Frameworks</p>
+					<p>CI/CD, Testing Frameworks</p>
 				</div>
 				<div class="skill-item">
 					<strong data-i18n="skillsLanguages">Langues:</strong>
@@ -53,40 +53,43 @@
 		<!-- Experience Section -->
 		<section data-version="all">
 			<h2 data-i18n="experience">Expérience Professionnelle</h2>
-
-			<!-- Ubisoft -->
-			<div class="experience-item" data-version="all qa-tools default">
-				<div class="experience-header">
-					<div>
+			<div class="experience-grid">
+				<!-- Ubisoft -->
+				<div class="experience-card" data-version="all qa-tools default" onclick="toggleExpandCard(this)">
+					<div class="experience-card-header">
 						<h3 data-i18n="ubisoft">Programmeur Généraliste - Assurance Qualité</h3>
-						<p class="company">Ubisoft Montréal</p>
+						<div class="experience-card-toggle">▼</div>
 					</div>
-					<div class="date">Mai 2023 – Présent</div>
+					<p class="experience-company">Ubisoft Montréal</p>
+					<div class="experience-date">Mai 2023 – Présent</div>
+					<p class="experience-description" data-i18n="qaGeneral">Développement d'outils et frameworks pour l'automatisation des tests</p>
+					<div class="experience-details">
+						<ul>
+							<li class="achievement" data-version="all qa-tools default" data-i18n="ubi1">Création d'une validation automatisée de la santé des NPC pour Assassin's Creed Shadows</li>
+							<li class="achievement" data-version="all default generalist" data-i18n="ubi2">Amélioration des frameworks de tests supportés par Anvil Pipeline</li>
+							<li class="achievement" data-version="all default" data-i18n="ubi3">Développement d'outils de monitoring pour l'assurance qualité</li>
+							<li class="achievement" data-version="all generalist" data-i18n="ubi4">Automatisation de tâches répétitives avec Python et scripts CI/CD</li>
+						</ul>
+					</div>
 				</div>
-				<p class="company" data-i18n="qaGeneral">Développement d'outils et frameworks pour l'automatisation des tests</p>
-				<ul>
-					<li class="achievement" data-version="all qa-tools default" data-i18n="ubi1">Création d'une validation automatisée de la santé des NPC pour Assassin's Creed Shadows</li>
-					<li class="achievement" data-version="all default generalist" data-i18n="ubi2">Amélioration des frameworks de tests supportés par Anvil Pipeline</li>
-					<li class="achievement" data-version="all default" data-i18n="ubi3">Développement d'outils de monitoring pour l'assurance qualité</li>
-					<li class="achievement" data-version="all generalist" data-i18n="ubi4">Automatisation de tâches répétitives avec Python et scripts CI/CD</li>
-				</ul>
-			</div>
 
-			<!-- Matrox -->
-			<div class="experience-item" data-version="all">
-				<div class="experience-header">
-					<div>
+				<!-- Matrox -->
+				<div class="experience-card" data-version="all" onclick="toggleExpandCard(this)">
+					<div class="experience-card-header">
 						<h3 data-i18n="matrox">Stagiaire Développement Logiciel</h3>
-						<p class="company">Matrox Imaging (Zebra)</p>
+						<div class="experience-card-toggle">▼</div>
 					</div>
-					<div class="date">Octobre 2022 – Avril 2023</div>
+					<p class="experience-company">Matrox Imaging (Zebra)</p>
+					<div class="experience-date">Octobre 2022 – Avril 2023</div>
+					<p class="experience-description" data-i18n="matroxRole">Implémentation d'algorithmes de filtrage d'images en production</p>
+					<div class="experience-details">
+						<ul>
+							<li class="achievement" data-i18n="mat1">Développement de deux algorithmes de filtrage basés sur des papiers de recherche</li>
+							<li class="achievement" data-i18n="mat2">Intégration dans la Matrox Image Library (C++)</li>
+							<li class="achievement" data-i18n="mat3">Création de tests unitaires et performance monitoring</li>
+						</ul>
+					</div>
 				</div>
-				<p class="company" data-i18n="matroxRole">Implémentation d'algorithmes de filtrage d'images en production</p>
-				<ul>
-					<li class="achievement" data-i18n="mat1">Développement de deux algorithmes de filtrage basés sur des papiers de recherche</li>
-					<li class="achievement" data-i18n="mat2">Intégration dans la Matrox Image Library (C++)</li>
-					<li class="achievement" data-i18n="mat3">Création de tests unitaires et performance monitoring</li>
-				</ul>
 			</div>
 		</section>
 
@@ -95,33 +98,53 @@
 			<h2 data-i18n="projects">Projets Clés</h2>
 			<div class="projects-grid">
 				<!-- NPC Validation (QA Tools) -->
-				<div class="project-card" data-version="all qa-tools default">
-					<h3 data-i18n="npcValidation">Validation Automatisée NPC</h3>
-					<span class="date" data-i18n="dateQA">2023-2025</span>
-					<p data-i18n="npcValidationDesc">Outil de validation automatisée de la santé des NPC pour Assassin's Creed Shadows. Détection automatique d'anomalies et génération de tickets de suivi.</p>
+				<div class="project-card" data-version="all qa-tools default" onclick="toggleExpandCard(this)">
+					<div class="project-card-header">
+						<h3 data-i18n="npcValidation">Validation Automatisée NPC</h3>
+						<div class="project-card-toggle">▼</div>
+					</div>
+					<span class="project-date" data-i18n="dateQA">2023-2025</span>
+					<p class="project-description" data-i18n="npcValidationDesc">Outil de validation automatisée de la santé des NPC pour Assassin's Creed Shadows et des suivants.</p>
+					<div class="project-details">
+						<p data-i18n="npcValidationDescFull">Détection automatique d'anomalies et génération de tickets de suivi. Outil critique pour l'assurance qualité des NPC.</p>
+					</div>
 				</div>
 
 				<!-- Supermarket App (Generalist) -->
-				<div class="project-card" data-version="all generalist default">
-					<h3 data-i18n="supermarketApp">Application Prix Supermarché</h3>
-					<span class="date" data-i18n="datePersonal">2024 (4 mois)</span>
-					<p data-i18n="supermarketDesc">Prototype end-to-end: application Android, backend en base de données, scripts de déploiement CI/CD. Architecture monorepo avec automatisation complète.</p>
+				<div class="project-card" data-version="all generalist default" onclick="toggleExpandCard(this)">
+					<div class="project-card-header">
+						<h3 data-i18n="supermarketApp">Application Prix Supermarché</h3>
+						<div class="project-card-toggle">▼</div>
+					</div>
+					<span class="project-date" data-i18n="datePersonal">2024 (4 mois)</span>
+					<p class="project-description" data-i18n="supermarketDesc">Prototype end-to-end: application Android, backend base de données, scripts CI/CD.</p>
+					<div class="project-details">
+						<p data-i18n="supermarketDescFull">Architecture monorepo avec automatisation complète. Déploiement entièrement automatisé via CI/CD.</p>
+					</div>
 				</div>
+
 				<!-- GAN (Image Processing) -->
-				<div class="project-card" data-version="all default">
-					<h3 data-i18n="ganProject">Génération d'Images avec GAN</h3>
-					<span class="date" data-i18n="dateGAN">2022</span>
-					<p data-i18n="ganDesc">Entraînement d'un GAN sur dataset de faces d'animés. Python, TensorFlow, optimisation pour qualité et performances.</p>
+				<div class="project-card" data-version="all default" onclick="toggleExpandCard(this)">
+					<div class="project-card-header">
+						<h3 data-i18n="ganProject">Génération d'Images avec GAN</h3>
+						<div class="project-card-toggle">▼</div>
+					</div>
+					<span class="project-date" data-i18n="dateGAN">2022</span>
+					<p class="project-description" data-i18n="ganDesc">Entraînement d'un GAN sur dataset de faces d'animés.</p>
+					<div class="project-details">
+						<p data-i18n="ganDescFull">Python, TensorFlow, optimisation pour qualité et performances. Modèle générant des images de haute qualité.</p>
+					</div>
 				</div>  
+			</div>
 		</section>
 
 		<!-- Education -->
 		<section data-version="all">
 			<h2 data-i18n="education">Formation</h2>
-			<div class="experience-item">
-				<h3 data-i18n="masters">Maîtrise en Informatique - Option Jeux Vidéo</h3>
-				<p class="company">Université du Québec à Chicoutimi (UQAC)</p>
-			</div>
+
+			<!-- Coursework Section -->
+			<div id="coursework-container"></div>
+
 			<div class="experience-item">
 				<h3 data-i18n="engineer">Ingénieur Informatique - Traitement d'Images</h3>
 				<p class="company">Télécom Saint Etienne</p>
