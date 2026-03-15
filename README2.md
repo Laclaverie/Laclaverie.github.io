@@ -1,52 +1,24 @@
-# Portfolio de Pierre Laclaverie
-
-Ce document sera divisé en trois thèmes (Jeux video, Traitement de l'image, Programmation), un projet peut avoir plusieurs tags.
-
-# Sommaire 
-
-- [Portfolio de Pierre Laclaverie](#portfolio-de-pierre-laclaverie)
-- [Sommaire](#sommaire)
-- [Tags](#tags)
-- [Projets de jeu vidéo](#projets-de-jeu-vidéo)
-- [Projets de traitement de l'image](#projets-de-traitement-de-limage)
-- [Projets de programmation](#projets-de-programmation)
-
-# Tags
-
-| Tag | Definition |
-|:---:|:---:|
-|(JVX)|Jeu vidéo|
-|(TIM)|Traitement de l'image|
-|(PGT)|Programmation "classique"|
-|(#TIM)|coups de cœur TIM|
-|(#PGTM)|coup de coeur PGT|
-|(#JVX)|coup  de cœur JVX|
-
-# Projets de jeu vidéo 
-
-|Nom du projet| Technologie| Code| Tag |Date de réalisation|
-|:---:|:---:|:---:|:---:|:---:|
-|Qat Game|Unity 2D|[itch](https://eyind.itch.io/qat)| (JVX)(#JVX) |Hiver 2022|
-|PsyHunt| Unity 3D|[github](https://github.com/Laclaverie/PsyHunt)|(JVX) |Automne 2021|
-|Le plus long trajet en voiture|  OpenCV, OpenGL, QT, C++|[github](https://github.com/Laclaverie/Voiture)| JVX) (TIM) (PGT) |Été 2021|
-
-# Projets de traitement de l'image  
-
-| Nom du projet| Technologie| Code| Tag |Date de réalisation|
-|:---:|:---:|:---:|:---:|:---:|
-|Génération d'images, GAN|python tensorflow|[github](https://github.com/Laclaverie/gan)| (TIM) (PGT) |Hiver 2022|
-|CNN, transfert learning,classification|  python, tensorflow, keras|[github](https://github.com/Laclaverie/cnn)| (TIM) |Hiver 2022|
-|Estimer la quantité d'espace non rangé dans une piece|  python OpenCV|[github](https://github.com/Laclaverie/TNI-UAQC-TP1) | (TIM) |Hiver 2022|
-| Sécurité informatique : blockchain|python, OpenCv, Web, SQL |[github](https://github.com/Laclaverie/blockchain)| (TIM) (PGT) |Hiver 2022|
-|Segmentation et labellisations de roches| python,OpenCV | [github](https://github.com/Laclaverie/uqac-tni-watershed)| (TIM) |Hiver 2022|
-|Astra Pioneers|  OpenCv,OpenGL, C++, QT|[gitlab](https://code.telecomste.fr/laclaverie.pierre/astra-pioneers)  | (JVX) (TIM) (PGT) (#JVX) (#TIM) |Hiver 2021|
-|Projet Design x informatique|python,Opencv, pyrebase,VueJS| [github](https://github.com/Laclaverie/design) | (TIM) (PGT) |Automne 2020/Hiver 2021|
+# 💫 About Me:
+I’m currently working at Ubisoft Montreal<br><br>Entrered in mai 2023 in the WarmUp program<br>Joined in August 2023 Assassin creed Family project. We merged into what is now Anvil Pipeline<br>Part of Core Services of Ubisoft.<br><br>I am currently a generalist programmer that develop tools for the Quality Assurance people (programmers and analyst mainly)<br> Working mainly on C# automation and inside the engine, using only tools developped by Ubisoft.
 
 
-# Projets de programmation
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/pierre-laclaverie) 
 
-| Nom du projet| Technologie| Code| Tag |Date de réalisation|
-|:---:|:---:|:---:|:---:|:---:|
-| Trois mini-projets en Intelligence artificielle| python|[github](https://github.com/Laclaverie/td-ia-uqac)| (PGT) |Hiver 2022|
-|Recréer des chaines de contaminations| JAVA|[github](https://github.com/Laclaverie/hpp)| (PGT) (#PGTM)|Été 2021|
-|Application de chat|JS|[gitlab](https://code.telecomste.fr/laclaverie.pierre/projet_js)| (PGT) |Hiver 2021|
+# 💻 Tech Stack:
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![TeamCity](https://img.shields.io/badge/teamcity-000000.svg?style=for-the-badge&logo=teamcity&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![Perforce Helix](https://img.shields.io/badge/-PERFORCE%20HELIX-404040?style=for-the-badge&logo=Perforce&logoColor=white) ![Confluence](https://img.shields.io/badge/confluence-%23172BF4.svg?style=for-the-badge&logo=confluence&logoColor=white) ![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white) ![Ubisoft](https://img.shields.io/badge/Ubisoft-%23F5F5F5.svg?style=for-the-badge&logo=Ubisoft&logoColor=black)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=Laclaverie&theme=dark&hide_border=false&include_all_commits=true&count_private=false)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=Laclaverie&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Laclaverie&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
+
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=Laclaverie&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
+---
+[![](https://visitcount.itsvg.in/api?id=Laclaverie&icon=0&color=0)](https://visitcount.itsvg.in)
+
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
