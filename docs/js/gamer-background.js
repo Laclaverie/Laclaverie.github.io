@@ -3,7 +3,7 @@
  * Loads game images and creates a blended composite background on canvas
  * 
  * ADDING MORE IMAGES:
- * 1. Add your image file to docs/v2/images/
+ * 1. Add your image file to docs/images/
  * 2. Add the filename to the imageNames array below
  * 3. That's it! The script handles any image size automatically
  */
@@ -70,7 +70,7 @@ class GamerBackground {
 		console.log(`✅ Loaded ${this.images.filter(i => i).length}/${this.imageNames.length} game images`);
 		
 		if (this.images.filter(i => i).length === 0) {
-			console.error('❌ No images loaded! Check that images are in docs/v2/images/');
+			console.error('❌ No images loaded! Check that images are in docs/images/');
 		}
 	}
 
