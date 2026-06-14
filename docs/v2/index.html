@@ -17,10 +17,6 @@
 			</div>
 			<div class="header-right no-print">
 				<div class="controls hidden" id="easter-egg-controls">
-					<div class="toggle-group">
-						<button class="toggle-btn active" data-lang-toggle="fr" onclick="toggleLanguage('fr')">FR</button>
-						<button class="toggle-btn" data-lang-toggle="en" onclick="toggleLanguage('en')">EN</button>
-					</div>
 					<button class="theme-toggle" onclick="toggleTheme()" title="Toggle personal theme">🎮</button>
 				</div>
 				<div class="standard-controls">
@@ -44,20 +40,20 @@
 		<!-- Profile Section -->
 		<section class="profile">
 			<h2 data-i18n="profileTitle">Profil</h2>
-			<p data-i18n="profileDesc">Programmeur généraliste passionné par la création d'outils et l'automatisation. Fort d'une expertise en développement de filtres d'images (C++/OpenCV) et en architecture de systèmes de tests automatisés. Expert dans le cycle complet de développement, de la recherche théorique à la livraison en production. Orienté vers la collaboration et la résolution de problèmes complexes.</p>
+			<p data-i18n="profileDesc">Programmeur généraliste intéressé par la création d'outils et l'automatisation. J'ai travaillé sur le développement de filtres d'images (C++/OpenCV) et sur l'architecture de systèmes de tests automatisés. J'apprécie m'impliquer dans le cycle de développement, de la recherche à la mise en production, en travaillant en équipe pour résoudre des problèmes concrets.</p>
 			
 			<div class="profile-skills">
 				<div class="skill-item">
 					<strong data-i18n="skillsProgramming">Programmation:</strong>
-					<p>C++, C#, Python, Java, Rust, SQL</p>
+					<p data-i18n="skillsProgrammingList"></p>
 				</div>
 				<div class="skill-item">
 					<strong data-i18n="skillsTools">Outils & Frameworks:</strong>
-					<p>OpenCV, Unity3D, CI/CD, Jira, Git, Docker</p>
+					<p data-i18n="skillsToolsList"></p>
 				</div>
 				<div class="skill-item">
 					<strong data-i18n="skillsLanguages">Langues:</strong>
-					<p>Français (Natif), Anglais (Professionnel)</p>
+					<p data-i18n="skillsLanguagesList"></p>
 				</div>
 			</div>
 		</section>
@@ -65,14 +61,15 @@
 		<!-- Experience Section -->
 		<section class="experience">
 			<h2 data-i18n="experience">Expérience Professionnelle</h2>
+			<p class="team-note" data-i18n="teamNote"></p>
 			<div class="experience-list">
 				<!-- Ubisoft -->
 				<div class="experience-item">
 					<div class="item-header">
-						<h3 data-i18n="ubisoft">Programmeur Généraliste - Assurance Qualité</h3>
-						<span class="item-date">Mai 2023 – Présent</span>
+						<h3 data-i18n="ubisoft"></h3>
+						<span class="item-date" data-i18n="ubisoftDate">Mai 2023 – Présent</span>
 					</div>
-					<p class="item-company">Ubisoft Montréal</p>
+					<p class="item-company" data-i18n="ubisoftLoc"></p>
 					<ul class="item-details">
 						<li data-i18n="ubi1"></li>
 						<li data-i18n="ubi2"></li>
@@ -85,10 +82,10 @@
 				<!-- Matrox -->
 				<div class="experience-item">
 					<div class="item-header">
-						<h3 data-i18n="matrox">Stagiaire Développement Logiciel</h3>
-						<span class="item-date">Oct. 2022 – Avril 2023</span>
+						<h3 data-i18n="matrox"></h3>
+						<span class="item-date" data-i18n="matroxDate">Oct. 2022 – Avril 2023</span>
 					</div>
-					<p class="item-company">Matrox Imaging (Zebra)</p>
+					<p class="item-company" data-i18n="matroxLoc"></p>
 					<ul class="item-details">
 						<li data-i18n="mat1"></li>
 						<li data-i18n="mat2"></li>
@@ -104,28 +101,30 @@
 			<div class="projects-grid">
 				<!-- Ticket Analyzer -->
 				<div class="project-item">
-					<h3 data-i18n="ticketAnalyzer">Ticket Analyzer (YOLOv8)</h3>
+					<h3><a href="https://github.com/Laclaverie/ticket-analyzer" data-i18n="ticketAnalyzer"></a></h3>
+					<p class="project-status" data-i18n="ticketAnalyzerStatus"></p>
 					<p class="project-desc" data-i18n="ticketAnalyzerDesc"></p>
-					<p class="project-full-desc no-print" data-i18n="ticketAnalyzerDescFull"></p>
 				</div>
 
 				<!-- Barcode -->
 				<div class="project-item">
-					<h3 data-i18n="barcodeScanner">Comparateur de Barcodes</h3>
+					<h3 data-i18n="barcodeScanner"></h3>
+					<p class="project-status" data-i18n="barcodeScannerStatus"></p>
 					<p class="project-desc" data-i18n="barcodeScannerDesc"></p>
-					<p class="project-full-desc no-print" data-i18n="barcodeScannerDescFull"></p>
 				</div>
 
 				<!-- Qat -->
 				<div class="project-item">
-					<h3 data-i18n="qatGame">Jeu Qat</h3>
-					<p class="project-desc" data-i18n="qatDesc">Jeu narratif 2D réalisé avec Unity3D.</p>
+					<h3><a href="https://eyind.itch.io/qat" data-i18n="qatGame"></a></h3>
+					<p class="project-status" data-i18n="qatStatus"></p>
+					<p class="project-desc" data-i18n="qatDesc"></p>
 				</div>
 
 				<!-- Facial -->
 				<div class="project-item">
-					<h3 data-i18n="facialRecognition">Reconnaissance faciale</h3>
-					<p class="project-desc" data-i18n="facialDesc">Reconnaissance faciale dans un flux vidéo avec notifications e-mail...</p>
+					<h3><a href="https://github.com/Laclaverie/blockchain" data-i18n="facialRecognition"></a></h3>
+					<p class="project-status" data-i18n="facialStatus"></p>
+					<p class="project-desc" data-i18n="facialDesc"></p>
 				</div>
 			</div>
 		</section>
@@ -141,7 +140,6 @@
 		<div class="social-links">
 			<a href="https://www.linkedin.com/in/pierre-laclaverie/">LinkedIn</a>
 			<a href="mailto:pierre.laclaverie@gmail.com">Email</a>
-			<a href="https://github.com/Laclaverie">GitHub</a>
 		</div>
 		<p>&copy; 2025 Pierre Laclaverie. <span id="easter-egg-trigger" style="cursor: default;">•</span></p>
 	</footer>
