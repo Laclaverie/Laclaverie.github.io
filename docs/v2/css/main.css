@@ -296,6 +296,10 @@ html[data-theme="personal"] footer {
 		margin-bottom: 1.5rem;
 		font-size: 10pt;
 	}
+	.contact-header a {
+		color: black;
+		text-decoration: none;
+	}
 	main {
 		margin: 0;
 		max-width: 100%;

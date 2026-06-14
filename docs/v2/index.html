@@ -20,10 +20,10 @@
 					<button class="theme-toggle" onclick="toggleTheme()" title="Toggle personal theme">🎮</button>
 				</div>
 				<div class="standard-controls">
-					<button class="lang-switch-btn" onclick="toggleLanguage(document.documentElement.lang === 'fr' ? 'en' : 'fr')">
+					<button id="lang-toggle" class="lang-switch-btn" onclick="toggleLanguage(document.documentElement.lang === 'fr' ? 'en' : 'fr')">
 						<span class="lang-label">FR/EN</span>
 					</button>
-					<button class="download-btn" onclick="window.print()">
+					<button id="download-cv" class="download-btn" onclick="window.print()">
 						<span data-i18n="downloadCV">Télécharger CV (PDF)</span>
 					</button>
 				</div>
@@ -34,7 +34,11 @@
 	<main>
 		<!-- Contact Info for PDF/Print -->
 		<div class="print-only contact-header">
-			<p>pierre.laclaverie@gmail.com • linkedin.com/in/pierre-laclaverie/ • Montreal, QC</p>
+			<p>
+				<a href="mailto:pierre.laclaverie@gmail.com">pierre.laclaverie@gmail.com</a> •
+				<a href="https://linkedin.com/in/pierre-laclaverie/">linkedin.com/in/pierre-laclaverie/</a> •
+				<a href="https://github.com/Laclaverie">github.com/Laclaverie</a>
+			</p>
 		</div>
 
 		<!-- Profile Section -->
@@ -54,6 +58,10 @@
 				<div class="skill-item">
 					<strong data-i18n="skillsLanguages">Langues:</strong>
 					<p data-i18n="skillsLanguagesList"></p>
+				</div>
+				<div class="skill-item">
+					<strong data-i18n="residency">Statut:</strong>
+					<p data-i18n="residencyStatus">Résident Permanent</p>
 				</div>
 			</div>
 		</section>
@@ -76,6 +84,7 @@
 						<li data-i18n="ubi3"></li>
 						<li data-i18n="ubi4"></li>
 						<li data-i18n="ubi5"></li>
+						<li data-i18n="ubi6"></li>
 					</ul>
 				</div>
 
@@ -140,6 +149,7 @@
 		<div class="social-links">
 			<a href="https://www.linkedin.com/in/pierre-laclaverie/">LinkedIn</a>
 			<a href="mailto:pierre.laclaverie@gmail.com">Email</a>
+			<a href="https://github.com/Laclaverie">GitHub</a>
 		</div>
 		<p>&copy; 2025 Pierre Laclaverie. <span id="easter-egg-trigger" style="cursor: default;">•</span></p>
 	</footer>
