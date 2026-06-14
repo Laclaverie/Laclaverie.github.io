@@ -7,179 +7,143 @@
 	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
+	<canvas id="gamer-background-canvas"></canvas>
+
 	<header>
 		<div class="header-container">
 			<div class="header-left">
 				<h1 data-i18n="name">Pierre Laclaverie</h1>
-				<p data-i18n="role">Programmeur généraliste</p>
+				<p data-i18n="role">Programmeur généraliste • Assurance Qualité • Traitement d'images</p>
 			</div>
-			<div class="controls">
-				<div class="toggle-group">
-					<button class="toggle-btn active" data-lang-toggle="fr" onclick="toggleLanguage('fr')">FR</button>
-					<button class="toggle-btn" data-lang-toggle="en" onclick="toggleLanguage('en')">EN</button>
+			<div class="header-right no-print">
+				<div class="controls hidden" id="easter-egg-controls">
+					<div class="toggle-group">
+						<button class="toggle-btn active" data-lang-toggle="fr" onclick="toggleLanguage('fr')">FR</button>
+						<button class="toggle-btn" data-lang-toggle="en" onclick="toggleLanguage('en')">EN</button>
+					</div>
+					<button class="theme-toggle" onclick="toggleTheme()" title="Toggle personal theme">🎮</button>
 				</div>
-				<div class="toggle-group">
-					<button class="toggle-btn active" data-version-toggle="default" onclick="toggleVersion('default')">Default</button>
-					<button class="toggle-btn" data-version-toggle="generalist" onclick="toggleVersion('generalist')">Generalist</button>
-					<button class="toggle-btn" data-version-toggle="qa-tools" onclick="toggleVersion('qa-tools')">QA</button>
+				<div class="standard-controls">
+					<button class="lang-switch-btn" onclick="toggleLanguage(document.documentElement.lang === 'fr' ? 'en' : 'fr')">
+						<span class="lang-label">FR/EN</span>
+					</button>
+					<button class="download-btn" onclick="window.print()">
+						<span data-i18n="downloadCV">Télécharger CV (PDF)</span>
+					</button>
 				</div>
-				<button class="theme-toggle" onclick="toggleTheme()" title="Toggle personal theme">🎮</button>
 			</div>
 		</div>
 	</header>
 
 	<main>
+		<!-- Contact Info for PDF/Print -->
+		<div class="print-only contact-header">
+			<p>pierre.laclaverie@gmail.com • linkedin.com/in/pierre-laclaverie/ • Montreal, QC</p>
+		</div>
+
 		<!-- Profile Section -->
 		<section class="profile">
-			<h3 data-i18n="profileTitle">Profil</h3>
-			<p data-i18n="profileDesc">Programmeur généraliste passionné par la création d'outils et l'automatisation. Fort d'une expérience chez Ubisoft en assurance qualité et chez Matrox en développement logiciel, je maîtrise l'ensemble du cycle de développement, du prototypage à la production.</p>
+			<h2 data-i18n="profileTitle">Profil</h2>
+			<p data-i18n="profileDesc">Programmeur généraliste passionné par la création d'outils et l'automatisation. Fort d'une expertise en développement de filtres d'images (C++/OpenCV) et en architecture de systèmes de tests automatisés. Expert dans le cycle complet de développement, de la recherche théorique à la livraison en production. Orienté vers la collaboration et la résolution de problèmes complexes.</p>
 			
 			<div class="profile-skills">
 				<div class="skill-item">
 					<strong data-i18n="skillsProgramming">Programmation:</strong>
-					<p>C++, C#, Python, Java, Rust (beginner)</p>
+					<p>C++, C#, Python, Java, Rust, SQL</p>
 				</div>
 				<div class="skill-item">
 					<strong data-i18n="skillsTools">Outils & Frameworks:</strong>
-					<p>CI/CD, Testing Frameworks</p>
+					<p>OpenCV, Unity3D, CI/CD, Jira, Git, Docker</p>
 				</div>
 				<div class="skill-item">
 					<strong data-i18n="skillsLanguages">Langues:</strong>
-					<p>Français (natif), Anglais (professionnel)</p>
+					<p>Français (Natif), Anglais (Professionnel)</p>
 				</div>
 			</div>
 		</section>
 
 		<!-- Experience Section -->
-		<section data-version="all">
+		<section class="experience">
 			<h2 data-i18n="experience">Expérience Professionnelle</h2>
-			<div class="experience-grid">
+			<div class="experience-list">
 				<!-- Ubisoft -->
-				<div class="experience-card" data-version="all qa-tools default" onclick="toggleExpandCard(this)">
-					<div class="experience-card-header">
+				<div class="experience-item">
+					<div class="item-header">
 						<h3 data-i18n="ubisoft">Programmeur Généraliste - Assurance Qualité</h3>
-						<div class="experience-card-toggle">▼</div>
+						<span class="item-date">Mai 2023 – Présent</span>
 					</div>
-					<p class="experience-company">Ubisoft Montréal</p>
-					<div class="experience-date">Mai 2023 – Présent</div>
-					<p class="experience-description" data-i18n="qaGeneral">Développement d'outils et frameworks pour l'automatisation des tests</p>
-					<div class="experience-details">
-						<ul>
-							<li class="achievement" data-version="all qa-tools default" data-i18n="ubi1">Création d'une validation automatisée de la santé des NPC pour Assassin's Creed Shadows</li>
-							<li class="achievement" data-version="all default" data-i18n="ubi2">Amélioration des frameworks de tests supportés par Anvil Pipeline</li>
-							<li class="achievement" data-version="all default" data-i18n="ubi3">Développement d'outils de monitoring pour l'assurance qualité</li>
-							<li class="achievement" data-version="all" data-i18n="ubi4">Automatisation de tâches répétitives avec Python et scripts CI/CD</li>
-							<li class="achievement" data-version="all qa-tools default" data-i18n="ubi5">Création de scripts Python et outils internes pour automatiser tâches répétitives</li>
-							<li class="achievement" data-version="all default" data-i18n="ubi6">Développement d'outils de monitoring pour l'assurance qualité</li>
-							<li class="achievement" data-version="all" data-i18n="ubi7">Participation aux équipes de test fiabilité pour améliorer qualité feedback utilisateur</li>
-						</ul>
-					</div>
+					<p class="item-company">Ubisoft Montréal</p>
+					<ul class="item-details">
+						<li data-i18n="ubi1"></li>
+						<li data-i18n="ubi2"></li>
+						<li data-i18n="ubi3"></li>
+						<li data-i18n="ubi4"></li>
+						<li data-i18n="ubi5"></li>
+					</ul>
 				</div>
 
 				<!-- Matrox -->
-				<div class="experience-card" data-version="all" onclick="toggleExpandCard(this)">
-					<div class="experience-card-header">
+				<div class="experience-item">
+					<div class="item-header">
 						<h3 data-i18n="matrox">Stagiaire Développement Logiciel</h3>
-						<div class="experience-card-toggle">▼</div>
+						<span class="item-date">Oct. 2022 – Avril 2023</span>
 					</div>
-					<p class="experience-company">Matrox Imaging (Zebra)</p>
-					<div class="experience-date">Octobre 2022 – Avril 2023</div>
-					<p class="experience-description" data-i18n="matroxRole">Implémentation d'algorithmes de filtrage d'images en production</p>
-					<div class="experience-details">
-						<ul>
-							<li class="achievement" data-i18n="mat1">Développement de deux algorithmes de filtrage basés sur des papiers de recherche</li>
-							<li class="achievement" data-i18n="mat2">Intégration dans la Matrox Image Library (C++)</li>
-							<li class="achievement" data-i18n="mat3">Création de tests unitaires et performance monitoring</li>
-						</ul>
-					</div>
+					<p class="item-company">Matrox Imaging (Zebra)</p>
+					<ul class="item-details">
+						<li data-i18n="mat1"></li>
+						<li data-i18n="mat2"></li>
+						<li data-i18n="mat3"></li>
+					</ul>
 				</div>
 			</div>
 		</section>
 
 		<!-- Projects Section -->
-		<section>
-			<h2 data-i18n="projects">Projets Clés</h2>
+		<section class="projects">
+			<h2 data-i18n="projects">Projets Personnels</h2>
 			<div class="projects-grid">
-				<!-- NPC Validation (QA Tools) -->
-				<div class="project-card" data-version="all qa-tools default" onclick="toggleExpandCard(this)">
-					<div class="project-card-header">
-						<h3 data-i18n="npcValidation">Validation Automatisée NPC</h3>
-						<div class="project-card-toggle">▼</div>
-					</div>
-					<p class="project-company">Ubisoft Montréal</p>
-					<span class="project-date" data-i18n="dateQA">2023-2025</span>
-					<p class="project-description" data-i18n="npcValidationDesc">Outil de validation automatisée de la santé des NPC pour Assassin's Creed Shadows et des suivants.</p>
-					<div class="project-details">
-						<p data-i18n="npcValidationDescFull">Détection automatique d'anomalies et génération de tickets de suivi. Outil critique pour l'assurance qualité des NPC.</p>
-					</div>
+				<!-- Ticket Analyzer -->
+				<div class="project-item">
+					<h3 data-i18n="ticketAnalyzer">Ticket Analyzer (YOLOv8)</h3>
+					<p class="project-desc" data-i18n="ticketAnalyzerDesc"></p>
+					<p class="project-full-desc no-print" data-i18n="ticketAnalyzerDescFull"></p>
 				</div>
 
-				<!-- Supermarket App (Generalist) -->
-				<div class="project-card" data-version="all generalist default" onclick="toggleExpandCard(this)">
-					<div class="project-card-header">
-						<h3 data-i18n="supermarketApp">Application Prix Supermarché</h3>
-						<div class="project-card-toggle">▼</div>
-					</div>
-					<span class="project-date" data-i18n="datePersonal">2024 (4 mois)</span>
-					<p class="project-description" data-i18n="supermarketDesc">Prototype end-to-end: application Android, backend base de données, scripts CI/CD.</p>
-					<div class="project-details">
-						<p data-i18n="supermarketDescFull">Architecture monorepo avec automatisation complète. Déploiement entièrement automatisé via CI/CD.</p>
-						<div class="project-links">
-							<a href="https://github.com/Laclaverie/app-comparer" target="_blank" class="project-link" data-i18n="githubRepo">Dépôt GitHub</a>
-						</div>
-					</div>
+				<!-- Barcode -->
+				<div class="project-item">
+					<h3 data-i18n="barcodeScanner">Comparateur de Barcodes</h3>
+					<p class="project-desc" data-i18n="barcodeScannerDesc"></p>
+					<p class="project-full-desc no-print" data-i18n="barcodeScannerDescFull"></p>
 				</div>
 
-				<!-- Facial Recognition & Blockchain -->
-				<div class="project-card" data-version="all default" onclick="toggleExpandCard(this)">
-					<div class="project-card-header">
-						<h3 data-i18n="facialRecognition">Reconnaissance faciale et blockchain</h3>
-						<div class="project-card-toggle">▼</div>
-					</div>
-					<span class="project-date" data-i18n="dateFacial">Hiver 2022</span>
-					<p class="project-description" data-i18n="facialDesc">Reconna\u00eetre le visage d'une personne dans un flux vid\u00e9o et l'avertir par e-mail.</p>
-					<div class="project-details">
-						<p data-i18n="facialDescFull">Stockage des r\u00e9ponses dans une blockchain. Python, OpenCV, face-recognition, Web, SQL.</p>
-						<div class="project-links">
-							<a href="https://github.com/Laclaverie/blockchain" target="_blank" class="project-link" data-i18n="githubRepo">D\u00e9p\u00f4t GitHub</a>
-						</div>
-					</div>
+				<!-- Qat -->
+				<div class="project-item">
+					<h3 data-i18n="qatGame">Jeu Qat</h3>
+					<p class="project-desc" data-i18n="qatDesc">Jeu narratif 2D réalisé avec Unity3D.</p>
 				</div>
 
-				<!-- QAT Game -->
-				<div class="project-card" data-version="all default" onclick="toggleExpandCard(this)">
-					<div class="project-card-header">
-						<h3 data-i18n="qatGame">Jeu Qat</h3>
-						<div class="project-card-toggle">▼</div>
-					</div>
-					<span class="project-date" data-i18n="dateQat">2022</span>
-					<p class="project-description" data-i18n="qatDesc">Jeu narratif 2D r\u00e9alis\u00e9 avec Unity.</p>
-					<div class="project-details">
-						<p data-i18n="qatDescFull">Un jeu narratif immersif offrant une exp\u00e9rience de gameplay unique. D\u00e9velopp\u00e9 avec Unity3D.</p>
-						<div class="project-links">
-							<a href="https://eyind.itch.io/qat" target="_blank" class="project-link">Itch.io</a>
-						</div>
-					</div>
-				</div>  
+				<!-- Facial -->
+				<div class="project-item">
+					<h3 data-i18n="facialRecognition">Reconnaissance faciale</h3>
+					<p class="project-desc" data-i18n="facialDesc">Reconnaissance faciale dans un flux vidéo avec notifications e-mail...</p>
+				</div>
 			</div>
 		</section>
 
-		<!-- Education -->
-		<section data-version="all">
+		<!-- Education Section -->
+		<section class="education">
 			<h2 data-i18n="education">Formation</h2>
-
-			<!-- Coursework Section -->
 			<div id="coursework-container"></div>
 		</section>
 	</main>
 
-	<footer>
+	<footer class="no-print">
 		<div class="social-links">
 			<a href="https://www.linkedin.com/in/pierre-laclaverie/">LinkedIn</a>
-			<a href="https://github.com/Laclaverie">GitHub</a>
 			<a href="mailto:pierre.laclaverie@gmail.com">Email</a>
+			<a href="https://github.com/Laclaverie">GitHub</a>
 		</div>
-		<p>&copy; 2024 Pierre Laclaverie. <a href="../index.html">Back to Home</a></p>
+		<p>&copy; 2025 Pierre Laclaverie. <span id="easter-egg-trigger" style="cursor: default;">•</span></p>
 	</footer>
 
 	<script src="js/translations.js"></script>

@@ -94,16 +94,6 @@ function updateActiveButtons() {
 	});
 }
 
-// Experience card expand/collapse
-function toggleExpandCard(card) {
-	card.classList.toggle('expanded');
-}
-
-// Semester card expand/collapse
-function toggleSemesterCard(card) {
-	card.classList.toggle('expanded');
-}
-
 // Render coursework
 function renderCoursework() {
 	const lang = localStorage.getItem('language') || 'fr';
@@ -113,70 +103,67 @@ function renderCoursework() {
 	// Translations
 	const uqacTitle = lang === 'fr' ? translations.fr.masters : translations.en.masters;
 	const uqacLocation = 'Université du Québec à Chicoutimi (UQAC)';
-	const tseTitle = lang === 'fr' ? 'Ingénieur Informatique - Traitement d\'Images' : 'Computer Science Engineer - Image Processing';
+	const tseTitle = lang === 'fr' ? translations.fr.engineer : translations.en.engineer;
 	const tseLocation = 'Télécom Saint Etienne';
 	const titleFeatured = lang === 'fr' ? 'Cours pertinents' : 'Relevant Courses';
-	const titleOther = lang === 'fr' ? 'Autres cours' : 'Other Courses';
 
-	// Helper function to create coursework card HTML
-	function createCourseCard(title, location, courses, isFeaturedOnly = true) {
-		const courseNames = courses.map(c => lang === 'fr' ? c.titleFr : c.titleEn).join(', ');
-		
-		let cardHtml = `<div class="experience-card coursework-card">
-			<div class="coursework-header-clickable" onclick="toggleExpandCard(this.closest('.coursework-card'))">
-				<div class="experience-card-header">
-					<h3>${title}</h3>
-					<div class="experience-card-toggle">▼</div>
-				</div>
-				<p class="experience-company">${location}</p>
-				<p class="coursework-preview">${courseNames}</p>
+	// Helper function to create coursework section
+	function createCourseSection(title, location, courses) {
+		let html = `<div class="experience-item">
+			<div class="item-header">
+				<h3>${title}</h3>
 			</div>
-			<div class="experience-details">
-				<div class="coursework-section">
-					<h4>${titleFeatured}</h4>
-					<table class="course-table">
-						<thead>
-							<tr>
-								<th class="course-cell">Code</th>
-								<th class="course-cell">${lang === 'fr' ? 'Titre' : 'Title'}</th>
-							</tr>
-						</thead>
-						<tbody>`;
+			<p class="item-company">${location}</p>
+			<ul class="item-details">`;
 
 		courses.forEach(course => {
 			const courseTitle = lang === 'fr' ? course.titleFr : course.titleEn;
-			cardHtml += `<tr class="course-row">
-				<td class="course-cell course-code">${course.code}</td>
-				<td class="course-cell course-name">${courseTitle}</td>
-			</tr>`;
+			html += `<li><strong>${course.code}</strong>: ${courseTitle}</li>`;
 		});
 
-		cardHtml += `</tbody>
-					</table>
-				</div>
-			</div>
-		</div>`;
-
-		return cardHtml;
+		html += `</ul></div>`;
+		return html;
 	}
 
-	// Build UQAC section with featured courses
-	let html = createCourseCard(uqacTitle, uqacLocation, courseworkData.uqac.featured);
-
-	// Build TSE section with featured courses
-	html += createCourseCard(tseTitle, tseLocation, courseworkData.tse.featured);
+	// Build sections
+	let html = createCourseSection(uqacTitle, uqacLocation, courseworkData.uqac.featured);
+	html += createCourseSection(tseTitle, tseLocation, courseworkData.tse.featured);
 
 	container.innerHTML = html;
 }
 
 
 
+// Easter Egg Logic
+let triggerCount = 0;
+const triggerElement = document.getElementById('easter-egg-trigger');
+if (triggerElement) {
+	triggerElement.addEventListener('click', () => {
+		triggerCount++;
+		if (triggerCount === 7) { // 7 clicks to reveal
+			document.getElementById('easter-egg-controls').classList.remove('hidden');
+			console.log("🎮 Gamer mode unlocked! You found the hidden controls.");
+			triggerElement.style.color = "var(--accent)";
+		}
+	});
+}
+
+// Console Hint
+console.log("%cLooking for the source code? Check out https://github.com/Laclaverie", "color: #3498db; font-size: 14px; font-weight: bold;");
+console.log("Hint: Something happens if you click the dot in the footer 7 times... 🕵️‍♂️");
+
 // Initialize application
 function initializeContent() {
-	const savedLang = localStorage.getItem('language') || 'fr';
+	const savedLang = localStorage.getItem('language') || (navigator.language.startsWith('en') ? 'en' : 'fr');
 	const savedVersion = localStorage.getItem('version') || 'default';
 	const savedTheme = localStorage.getItem('theme') || 'professional';
 	
+	// If theme was already personal, show controls
+	if (savedTheme === 'personal') {
+		const controls = document.getElementById('easter-egg-controls');
+		if (controls) controls.classList.remove('hidden');
+	}
+
 	setLanguage(savedLang);
 	setVersion(savedVersion);
 	setTheme(savedTheme);
