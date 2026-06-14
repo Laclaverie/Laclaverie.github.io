@@ -1,0 +1,36 @@
+# Python scripts for image processing
+blend_images.py
+generate_*.py
+
+# Generated composite backgrounds
+docs/v2/css/background-composite.jpg
+docs/v2/css/background-*.jpg
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Intermediary images
+
+tmp/
