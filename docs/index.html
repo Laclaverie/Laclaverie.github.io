@@ -1,204 +1,158 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="fr">
 <head>
-	<title>Pierre Laclaverie - Portfolio</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-		
-		body {
-			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-			min-height: 100vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			padding: 20px;
-		}
-		
-		.container {
-			background: white;
-			border-radius: 12px;
-			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-			max-width: 600px;
-			width: 100%;
-			padding: 60px 40px;
-			text-align: center;
-		}
-		
-		h1 {
-			color: #333;
-			margin-bottom: 12px;
-			font-size: 2.5em;
-		}
-		
-		.subtitle {
-			color: #666;
-			font-size: 1.1em;
-			margin-bottom: 40px;
-			line-height: 1.6;
-		}
-		
-		.versions {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 20px;
-			margin-bottom: 30px;
-		}
-		
-		.version-card {
-			padding: 30px;
-			border-radius: 8px;
-			text-decoration: none;
-			transition: all 0.3s ease;
-			border: 2px solid #eee;
-		}
-		
-		.version-card:hover {
-			border-color: #667eea;
-			box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
-			transform: translateY(-4px);
-		}
-		
-		.version-card.v1 {
-			background: #f8f9fa;
-		}
-		
-		.version-card.v2 {
-			background: #f0f4ff;
-			border: 2px solid #667eea;
-		}
-		
-		.version-card h2 {
-			color: #333;
-			margin-bottom: 12px;
-			font-size: 1.4em;
-		}
-		
-		.version-card p {
-			color: #666;
-			font-size: 0.95em;
-			line-height: 1.5;
-			margin-bottom: 16px;
-		}
-		
-		.badge {
-			display: inline-block;
-			background: #667eea;
-			color: white;
-			padding: 4px 12px;
-			border-radius: 20px;
-			font-size: 0.8em;
-			font-weight: 600;
-			margin-bottom: 12px;
-		}
-		
-		.badge.new {
-			background: #10b981;
-		}
-		
-		.btn {
-			display: inline-block;
-			padding: 12px 32px;
-			background: #667eea;
-			color: white;
-			text-decoration: none;
-			border-radius: 6px;
-			font-weight: 600;
-			transition: background 0.3s ease;
-		}
-		
-		.version-card.v1 .btn {
-			background: #999;
-		}
-		
-		.version-card.v1 .btn:hover {
-			background: #777;
-		}
-		
-		.version-card.v2 .btn:hover {
-			background: #5568d3;
-		}
-		
-		.footer-note {
-			margin-top: 40px;
-			padding-top: 40px;
-			border-top: 1px solid #eee;
-			color: #999;
-			font-size: 0.9em;
-		}
-		
-		.social-links {
-			margin-top: 20px;
-		}
-		
-		.social-links a {
-			display: inline-block;
-			margin: 0 12px;
-			color: #667eea;
-			text-decoration: none;
-			font-weight: 600;
-			transition: color 0.3s ease;
-		}
-		
-		.social-links a:hover {
-			color: #764ba2;
-		}
-		
-		@media (max-width: 600px) {
-			.container {
-				padding: 40px 24px;
-			}
-			
-			h1 {
-				font-size: 2em;
-			}
-			
-			.versions {
-				grid-template-columns: 1fr;
-			}
-			
-			.subtitle {
-				font-size: 1em;
-			}
-		}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Pierre Laclaverie - CV</title>
+	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-	<div class="container">
-		<h1>👋 Pierre Laclaverie</h1>
-		<p class="subtitle">Generalist Programmer • QA Tools • Image Processing</p>
-		
-		<div class="versions">
-			<!-- V1 Card -->
-			<a href="v1/index.html" class="version-card v1">
-				<span class="badge">Original</span>
-				<h2>Version 1</h2>
-				<p>Classic portfolio with project showcase and career journey</p>
-				<button class="btn">View V1</button>
-			</a>
-			
-			<!-- V2 Card -->
-			<a href="v2/index.html" class="version-card v2">
-				<span class="badge new">Recommended</span>
-				<h2>Version 2</h2>
-				<p>Modern CV with role-specific versions (Generalist, QA Tools)</p>
-				<button class="btn">View V2</button>
-			</a>
-		</div>
-		
-		<div class="footer-note">
-			<p>Language & version selection available on each portfolio page</p>
-			<div class="social-links">
-				<a href="https://www.linkedin.com/in/pierre-laclaverie/">LinkedIn</a>
-				<a href="https://github.com/Laclaverie/Laclaverie.github.io">GitHub</a>
+
+	<header>
+		<div class="header-container">
+			<div class="header-left">
+				<h1 data-i18n="name">Pierre Laclaverie</h1>
+				<p data-i18n="role">Programmeur généraliste • Assurance Qualité • Traitement d'images</p>
+			</div>
+			<div class="header-right no-print">
+				<div class="controls hidden" id="easter-egg-controls">
+					<button class="theme-toggle" onclick="toggleTheme()" title="Toggle personal theme">🎮</button>
+				</div>
+				<div class="standard-controls">
+					<button id="lang-toggle" class="lang-switch-btn" onclick="toggleLanguage(document.documentElement.lang === 'fr' ? 'en' : 'fr')">
+						<span class="lang-label">FR/EN</span>
+					</button>
+					<button id="download-cv" class="download-btn" onclick="window.print()">
+						<span data-i18n="downloadCV">Télécharger CV (PDF)</span>
+					</button>
+				</div>
 			</div>
 		</div>
-	</div>
+	</header>
+
+	<main>
+		<!-- Contact Info for PDF/Print -->
+		<div class="print-only contact-header">
+			<p>
+				<a href="mailto:pierre.laclaverie@gmail.com">pierre.laclaverie@gmail.com</a> •
+				<a href="https://linkedin.com/in/pierre-laclaverie/">linkedin.com/in/pierre-laclaverie/</a> •
+				<a href="https://github.com/Laclaverie">github.com/Laclaverie</a> •
+				<a href="https://laclaverie.github.io/">laclaverie.github.io</a>
+			</p>
+		</div>
+
+		<!-- Profile Section -->
+		<section class="profile">
+			<h2 data-i18n="profileTitle">Profil</h2>
+			<p data-i18n="profileDesc">Programmeur généraliste intéressé par la création d'outils et l'automatisation. J'ai travaillé sur le développement de filtres d'images (C++/OpenCV) et sur l'architecture de systèmes de tests automatisés. J'apprécie m'impliquer dans le cycle de développement, de la recherche à la mise en production, en travaillant en équipe pour résoudre des problèmes concrets.</p>
+
+			<div class="profile-skills">
+				<div class="skill-item">
+					<strong data-i18n="skillsProgramming">Programmation:</strong>
+					<p data-i18n="skillsProgrammingList"></p>
+				</div>
+				<div class="skill-item">
+					<strong data-i18n="skillsTools">Outils & Frameworks:</strong>
+					<p data-i18n="skillsToolsList"></p>
+				</div>
+				<div class="skill-item">
+					<strong data-i18n="skillsLanguages">Langues:</strong>
+					<p data-i18n="skillsLanguagesList"></p>
+				</div>
+				<div class="skill-item">
+					<strong data-i18n="residency">Statut:</strong>
+					<p data-i18n="residencyStatus">Résident Permanent</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience Section -->
+		<section class="experience">
+			<h2 data-i18n="experience">Expérience Professionnelle</h2>
+			<p class="team-note" data-i18n="teamNote"></p>
+			<div class="experience-list">
+				<!-- Ubisoft -->
+				<div class="experience-item">
+					<div class="item-header">
+						<h3 data-i18n="ubisoft"></h3>
+						<span class="item-date" data-i18n="ubisoftDate">Mai 2023 – Présent</span>
+					</div>
+					<p class="item-company" data-i18n="ubisoftLoc"></p>
+					<ul class="item-details">
+						<li data-i18n="ubi1"></li>
+						<li data-i18n="ubi2"></li>
+						<li data-i18n="ubi3"></li>
+					</ul>
+				</div>
+
+				<!-- Matrox -->
+				<div class="experience-item">
+					<div class="item-header">
+						<h3 data-i18n="matrox"></h3>
+						<span class="item-date" data-i18n="matroxDate">Oct. 2022 – Avril 2023</span>
+					</div>
+					<p class="item-company" data-i18n="matroxLoc"></p>
+					<ul class="item-details">
+						<li data-i18n="mat1"></li>
+						<li data-i18n="mat2"></li>
+						<li data-i18n="mat3"></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section class="projects">
+			<h2 data-i18n="projects">Projets Personnels</h2>
+			<div class="projects-grid">
+				<!-- Ticket Analyzer -->
+				<div class="project-item">
+					<h3><a href="https://github.com/Laclaverie/ticket-analyzer" data-i18n="ticketAnalyzer"></a></h3>
+					<p class="project-status" data-i18n="ticketAnalyzerStatus"></p>
+					<p class="project-desc" data-i18n="ticketAnalyzerDesc"></p>
+				</div>
+
+				<!-- Barcode -->
+				<div class="project-item">
+					<h3><a href="https://github.com/Laclaverie/app-comparer" data-i18n="barcodeScanner"></a></h3>
+					<p class="project-status" data-i18n="barcodeScannerStatus"></p>
+					<p class="project-desc" data-i18n="barcodeScannerDesc"></p>
+				</div>
+
+				<!-- Qat -->
+				<div class="project-item">
+					<h3><a href="https://eyind.itch.io/qat" data-i18n="qatGame"></a></h3>
+					<p class="project-status" data-i18n="qatStatus"></p>
+					<p class="project-desc" data-i18n="qatDesc"></p>
+				</div>
+
+				<!-- Facial -->
+				<div class="project-item">
+					<h3><a href="https://github.com/Laclaverie/blockchain" data-i18n="facialRecognition"></a></h3>
+					<p class="project-status" data-i18n="facialStatus"></p>
+					<p class="project-desc" data-i18n="facialDesc"></p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Education Section -->
+		<section class="education">
+			<h2 data-i18n="education">Formation</h2>
+			<div id="coursework-container"></div>
+		</section>
+	</main>
+
+	<footer class="no-print">
+		<div class="social-links">
+			<a href="https://www.linkedin.com/in/pierre-laclaverie/">LinkedIn</a>
+			<a href="mailto:pierre.laclaverie@gmail.com">Email</a>
+			<a href="https://github.com/Laclaverie">GitHub</a>
+		</div>
+		<p>&copy; 2025 Pierre Laclaverie. <span id="easter-egg-trigger" style="cursor: default;">•</span></p>
+	</footer>
+
+	<script src="js/translations.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/gamer-background.js"></script>
 </body>
 </html>
