@@ -50,6 +50,12 @@ header {
 	margin-bottom: 0.2rem;
 }
 
+.header-location {
+	font-size: 0.85rem;
+	opacity: 0.7;
+	margin-top: 0.2rem;
+}
+
 .header-left p {
 	font-size: 1.1rem;
 	opacity: 0.9;

@@ -27,8 +27,7 @@ const courseworkData = {
 			{ code: 'IMGTIS7', titleFr: 'Traitement d\'image', titleEn: 'Image Processing' },
 			{ code: 'IMGMMS7', titleFr: 'Morphologie mathématiques', titleEn: 'Mathematical Morphology' },
 			{ code: '48BDDS7', titleFr: 'Bases de données', titleEn: 'Databases' },
-			{ code: 'O-INFPHP', titleFr: 'Programmation haute performance', titleEn: 'High Performance Computing' },
-			{ code: 'O-INFPRO', titleFr: 'Projet High Performance Computing', titleEn: 'HPC Project' }
+			{ code: 'O-INFPHP', titleFr: 'Programmation haute performance', titleEn: 'High Performance Computing' }
 		]
 	}
 };
