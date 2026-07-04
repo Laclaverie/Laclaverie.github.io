@@ -1,0 +1,13 @@
+{
+  "name": "cv-laclaverie-tests",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:print": "node tests/print-pages.js",
+    "test:print:save": "node tests/print-pages.js --save-pdfs"
+  },
+  "devDependencies": {
+    "pdf-parse": "^1.1.1",
+    "puppeteer": "^22.0.0"
+  }
+}

@@ -300,6 +300,13 @@ html[data-theme="personal"] footer {
 		color: #0056b3;
 		text-decoration: underline;
 	}
+	.contact-icon {
+		width: 10pt;
+		height: 10pt;
+		vertical-align: middle;
+		margin-bottom: 1pt;
+		color: #333;
+	}
 	a {
 		text-decoration: underline;
 		color: #0056b3;
@@ -319,6 +326,16 @@ html[data-theme="personal"] footer {
 	}
 	section {
 		margin-bottom: 1.5rem;
+	}
+
+	html[lang="fr"] body {
+		font-size: 10pt;
+	}
+	html[lang="fr"] h2 {
+		font-size: 14pt;
+	}
+	html[lang="fr"] section {
+		margin-bottom: 1rem;
 	}
 }
 
