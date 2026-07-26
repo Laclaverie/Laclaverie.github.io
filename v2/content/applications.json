@@ -43,5 +43,14 @@
       "en": "High-Performance C++ Developer — SOLA Clearing",
       "fr": "Développeur C++ haute performance — SOLA Clearing"
     }
+  },
+  {
+    "path": "autodesk/maya-software-engineer",
+    "company": "Autodesk",
+    "role": "games-tools",
+    "jobTitle": {
+      "en": "Software Engineer — Consulting M&E (Maya)",
+      "fr": "Ingénieur Logiciel — Consulting M&E (Maya)"
+    }
   }
 ]

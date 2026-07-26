@@ -1,0 +1,38 @@
+{
+  "id": "games-tools",
+  "headline": {
+    "en": "Tools Programmer • Games • C++ / Python / C#",
+    "fr": "Programmeur Outils • Jeux vidéo • C++ / Python / C#"
+  },
+  "profile": "games-tools",
+  "skills": [
+    {
+      "id": "programming",
+      "label": "skillsProgramming",
+      "value": { "en": "C++, Python, C#, SQL", "fr": "C++, Python, C#, SQL" }
+    },
+    {
+      "id": "tools",
+      "label": "skillsTools",
+      "value": {
+        "en": "OpenGL, Qt, OpenCV, TensorFlow/Keras, Unity, Git/Perforce, Jira",
+        "fr": "OpenGL, Qt, OpenCV, TensorFlow/Keras, Unity, Git/Perforce, Jira"
+      }
+    },
+    {
+      "id": "languages",
+      "label": "skillsLanguages",
+      "value": { "en": "French (Native), English (Professional)", "fr": "Français (Natif), Anglais (Professionnel)" }
+    },
+    {
+      "id": "residency",
+      "label": "residency",
+      "value": { "en": "Permanent Resident • Driver's license & vehicle", "fr": "Résident Permanent • Permis de conduire et véhicule" }
+    }
+  ],
+  "experience": {
+    "ubisoft": ["npc-sanity", "csharp-tooling", "collaboration", "engine-cpp"],
+    "matrox": ["guided-filter", "design-docs", "testing"]
+  },
+  "projects": ["car-trip", "qat-game", "psyhunt", "ticket-analyzer"]
+}
