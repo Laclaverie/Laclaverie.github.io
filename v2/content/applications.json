@@ -7,5 +7,14 @@
       "en": "Software Developer — SC SaaS Video Device Integration",
       "fr": "Développeur Logiciel — SC SaaS Video Device Integration"
     }
+  },
+  {
+    "path": "gameloft/tools-programmer",
+    "company": "Gameloft",
+    "role": "unity-tools",
+    "jobTitle": {
+      "en": "Tools Programmer — D&D survival craft game (Unity)",
+      "fr": "Programmeur Outils — jeu D&D survival craft (Unity)"
+    }
   }
 ]

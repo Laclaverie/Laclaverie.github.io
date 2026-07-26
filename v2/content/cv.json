@@ -31,6 +31,10 @@
       "en": "Software developer (C#, C++) with three years at Ubisoft building large-scale test automation and developer tooling, and an image processing background (engineering degree + Matrox Imaging). Used to maintaining frameworks consumed by many teams, monitoring services through automated tests in CI, and carrying features from design to production in an agile, bilingual environment.",
       "fr": "Développeur logiciel (C#, C++) avec trois ans chez Ubisoft en automatisation de tests à grande échelle et outillage développeur, et une formation en traitement d'images (diplôme d'ingénieur + Matrox Imaging). Habitué à maintenir des frameworks utilisés par de nombreuses équipes, à surveiller des services via des tests automatisés en CI, et à mener des fonctionnalités de la conception à la production dans un environnement agile et bilingue."
     },
+    "unity-tools": {
+      "en": "Tools programmer (C#, C++) with three years at Ubisoft building internal tools and automation that make developers and non-technical content creators faster. I turn repetitive, friction-heavy workflows into clean, documented tooling that teams actually adopt — validation reporting consumed directly by Level Designers, for example. Shipped Unity games and looking to focus my tools craft inside the Unity Editor.",
+      "fr": "Programmeur outils (C#, C++) avec trois ans chez Ubisoft à construire des outils internes et de l'automatisation qui rendent développeurs et créateurs de contenu non techniques plus efficaces. Je transforme des flux de travail répétitifs et pénibles en outils propres et documentés que les équipes adoptent réellement — des rapports de validation consommés directement par les Level Designers, par exemple. J'ai développé des jeux sous Unity et je cherche à spécialiser mon métier d'outilleur dans l'éditeur Unity."
+    },
     "image-processing": {
       "en": "Software engineer with an image processing background (engineering degree + Matrox Imaging) currently building large-scale test automation and developer tooling for game engines. Comfortable implementing algorithms from research papers (C++/OpenCV) and taking them to production with rigorous testing.",
       "fr": "Ingénieur logiciel avec une formation en traitement d'images (diplôme d'ingénieur + Matrox Imaging), travaillant actuellement sur l'automatisation de tests à grande échelle et l'outillage pour moteurs de jeu. À l'aise pour implémenter des algorithmes issus de publications scientifiques (C++/OpenCV) et les amener en production avec des tests rigoureux."
@@ -207,6 +211,17 @@
       "desc": {
         "en": "2D narrative game developed with Unity3D (C#).",
         "fr": "Jeu narratif 2D développé avec Unity3D (C#)."
+      }
+    },
+    {
+      "id": "psyhunt",
+      "tags": ["games", "unity"],
+      "name": { "en": "PsyHunt", "fr": "PsyHunt" },
+      "url": "https://github.com/Laclaverie/PsyHunt",
+      "status": { "en": "[Academic Project]", "fr": "[Projet Académique]" },
+      "desc": {
+        "en": "3D game developed with Unity3D (C#).",
+        "fr": "Jeu 3D développé avec Unity3D (C#)."
       }
     },
     {

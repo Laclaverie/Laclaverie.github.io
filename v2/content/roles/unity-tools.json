@@ -1,0 +1,13 @@
+{
+  "id": "unity-tools",
+  "headline": {
+    "en": "Tools Programmer • C# • Unity • Automation",
+    "fr": "Programmeur Outils • C# • Unity • Automatisation"
+  },
+  "profile": "unity-tools",
+  "experience": {
+    "ubisoft": ["csharp-tooling", "npc-sanity", "test-framework", "collaboration", "observability"],
+    "matrox": ["guided-filter", "design-docs", "testing"]
+  },
+  "projects": ["qat-game", "psyhunt", "ticket-analyzer", "facial-recognition"]
+}
