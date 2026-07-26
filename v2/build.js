@@ -65,7 +65,7 @@ function resolveVariant(roleId, application) {
 		labels: content.labels,
 		headline: role.headline,
 		profile: content.profiles[role.profile],
-		skills: content.skills,
+		skills: role.skills || content.skills,
 		highlights: role.highlights === false ? [] : content.highlights,
 		teamNote: content.teamNote,
 		experience,
@@ -184,7 +184,9 @@ async function main() {
 	for (const app of applications) {
 		const dir = path.join(DIST, ...app.path.split('/'));
 		const base = `pierre-laclaverie-cv-${app.path.split('/').join('-')}`;
-		writePage(dir, resolveVariant(app.role, app), { noindex: true, pdfBaseName: base, pageUrl: `https://laclaverie.github.io/${app.path}/` });
+		const variant = resolveVariant(app.role, app);
+		variant.applicationUrl = `https://laclaverie.github.io/${app.path}/`;
+		writePage(dir, variant, { noindex: true, pdfBaseName: base, pageUrl: `https://laclaverie.github.io/${app.path}/` });
 		pages.push({ dir, urlPath: '/' + app.path + '/', pdfBaseName: base });
 		console.log(`Page: /${app.path}/ (${app.company}, role ${app.role})`);
 	}

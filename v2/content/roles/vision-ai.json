@@ -5,6 +5,31 @@
     "fr": "Ingénieur Logiciel • Traitement d'images • C# / C++ • IA appliquée"
   },
   "profile": "vision-ai",
+  "skills": [
+    {
+      "id": "programming",
+      "label": "skillsProgramming",
+      "value": { "en": "C++, C#, Python, SQL", "fr": "C++, C#, Python, SQL" }
+    },
+    {
+      "id": "tools",
+      "label": "skillsTools",
+      "value": {
+        "en": "OpenCV, Matrox Imaging Library (MIL), TensorFlow/Keras, YOLOv8, Git/Perforce, unit testing",
+        "fr": "OpenCV, Matrox Imaging Library (MIL), TensorFlow/Keras, YOLOv8, Git/Perforce, tests unitaires"
+      }
+    },
+    {
+      "id": "languages",
+      "label": "skillsLanguages",
+      "value": { "en": "French (Native), English (Professional)", "fr": "Français (Natif), Anglais (Professionnel)" }
+    },
+    {
+      "id": "residency",
+      "label": "residency",
+      "value": { "en": "Permanent Resident • Driver's license & vehicle", "fr": "Résident Permanent • Permis de conduire et véhicule" }
+    }
+  ],
   "experience": {
     "ubisoft": ["csharp-tooling", "test-framework", "collaboration"],
     "matrox": ["guided-filter", "design-docs", "testing"]

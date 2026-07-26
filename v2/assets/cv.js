@@ -83,7 +83,11 @@
 		p.appendChild(document.createTextNode(' • '));
 		p.appendChild(link('https://' + C.meta.github, C.meta.github));
 		p.appendChild(document.createTextNode(' • '));
-		p.appendChild(link('https://' + C.meta.website, C.meta.website));
+		var siteHref = C.applicationUrl || ('https://' + C.meta.website);
+		var siteText = C.applicationUrl
+			? C.applicationUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')
+			: C.meta.website;
+		p.appendChild(link(siteHref, siteText));
 		contact.appendChild(p);
 		main.appendChild(contact);
 
