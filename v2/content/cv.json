@@ -58,7 +58,7 @@
     {
       "id": "residency",
       "label": "residency",
-      "value": { "en": "Permanent Resident", "fr": "Résident Permanent" }
+      "value": { "en": "Permanent Resident • Driver's license & vehicle", "fr": "Résident Permanent • Permis de conduire et véhicule" }
     }
   ],
   "highlights": [
