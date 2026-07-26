@@ -84,8 +84,8 @@
     }
   ],
   "teamNote": {
-    "en": "Note: Projects carried out in small teams (~3 programmers + a lead), from design to implementation, in collaboration with other teams to gather feedback on the shared technologies used.",
-    "fr": "Note : Travaux réalisés en petites équipes (~3 programmeurs + un lead), de la conception à l'implémentation, en collaboration avec les équipes responsables des technologies partagées pour obtenir des retours techniques."
+    "en": "Note: All work below carried out collaboratively in small teams (~3 programmers + a lead), from design to implementation, with other teams consulted for feedback on the shared technologies used.",
+    "fr": "Note : Tous les travaux ci-dessous réalisés en équipe (~3 programmeurs + un lead), de la conception à l'implémentation, en collaboration avec les autres équipes pour recueillir des retours sur les technologies partagées."
   },
   "experience": [
     {
@@ -104,8 +104,8 @@
           "id": "npc-sanity",
           "tags": ["qa", "tools", "engine"],
           "text": {
-            "en": "Designed and evolved NPC Sanity across three releases (v1: AC Shadows, v1.5: its DLC, v2: AC Black Flag Resynced) — validation tool monitoring thousands of NPCs across 32 combinatorial states and quest setups, distributed across 6 machines (~120h runtime). Caught multiple regressions pre-ship. v2 generalizes dynamic CI test generation (Jira reports for Level Designers) to any high-combinatorial test type.",
-            "fr": "Conception et évolution de NPC Sanity sur trois sorties (v1 : AC Shadows, v1.5 : son DLC, v2 : AC Black Flag Resynced) — outil de validation surveillant des milliers de NPCs sur 32 états combinatoires et configurations de quêtes. Suite distribuée sur 6 machines (~120h d'exécution) ; détection de nombreuses régressions avant la sortie. La v2 généralise la génération dynamique de tests en CI (rapports Jira pour Level Designers) à tout type de tests à haute combinatoire."
+            "en": "Core contributor to NPC Sanity across three releases (v1: AC Shadows, v1.5: its DLC, v2: AC Black Flag Resynced) — a team-built validation tool monitoring thousands of NPCs across 32 combinatorial states and quest setups, distributed across 6 machines (~120h runtime). Caught multiple regressions pre-ship. Helped design the v2 dynamic CI test generation (Jira reports for Level Designers), generalizing it to any high-combinatorial test type.",
+            "fr": "Contributeur principal de NPC Sanity sur trois sorties (v1 : AC Shadows, v1.5 : son DLC, v2 : AC Black Flag Resynced) — outil de validation construit en équipe, surveillant des milliers de NPCs sur 32 états combinatoires et configurations de quêtes, distribué sur 6 machines (~120h d'exécution). Détection de nombreuses régressions avant la sortie. Participation à la conception de la v2 et de sa génération dynamique de tests en CI (rapports Jira pour Level Designers), généralisée à tout type de tests à haute combinatoire."
           },
           "webExtra": {
             "en": "Valued enough that AI technical directors and level designers requested it be among the last systems decommissioned during post-release scale-down.",
@@ -116,8 +116,8 @@
           "id": "csharp-tooling",
           "tags": ["tools", "ci"],
           "text": {
-            "en": "Built a C# test-metadata system (user-provided and computed) for the monorepo shared by 5 productions, driving automatic test promotion in CI — monitored trial period, then assignment to the right stage (package-blocking, post-publish validation, daily, nightly). Automating repetitive tasks and improving user experience to get more developers engaged with test automation, from unit to functional to end-to-end tests (e.g. NPC Sanity).",
-            "fr": "Développement d'un système C# de métadonnées de tests (fournies ou calculées) pour le monorepo partagé entre 5 productions, pilotant la promotion automatique des tests en CI — période de surveillance, puis affectation au bon stage (bloquant la publication de package, validation post-publication, quotidien, nocturne). Automatisation des tâches répétitives et amélioration de l'expérience utilisateur pour engager davantage de développeurs dans l'automatisation des tests, du test unitaire au fonctionnel jusqu'au end-to-end (ex. NPC Sanity)."
+            "en": "Helped build a C# test-metadata system (user-provided and computed) for the monorepo shared by 5 productions, driving automatic test promotion in CI — monitored trial period, then assignment to the right stage (package-blocking, post-publish validation, daily, nightly). Automating repetitive tasks and improving user experience to get more developers engaged with test automation, from unit to functional to end-to-end tests (e.g. NPC Sanity).",
+            "fr": "Participation au développement d'un système C# de métadonnées de tests (fournies ou calculées) pour le monorepo partagé entre 5 productions, pilotant la promotion automatique des tests en CI — période de surveillance, puis affectation au bon stage (bloquant la publication de package, validation post-publication, quotidien, nocturne). Automatisation des tâches répétitives et amélioration de l'expérience utilisateur pour engager davantage de développeurs dans l'automatisation des tests, du test unitaire au fonctionnel jusqu'au end-to-end (ex. NPC Sanity)."
           }
         },
         {
