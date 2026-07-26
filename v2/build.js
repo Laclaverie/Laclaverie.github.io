@@ -97,12 +97,7 @@ function writePage(dir, variant, { noindex, pdfBaseName, pageUrl }) {
 }
 
 function copyAssets() {
-	const src = path.join(ROOT, 'assets');
-	const dst = path.join(DIST, 'assets');
-	fs.mkdirSync(dst, { recursive: true });
-	for (const file of fs.readdirSync(src)) {
-		fs.copyFileSync(path.join(src, file), path.join(dst, file));
-	}
+	fs.cpSync(path.join(ROOT, 'assets'), path.join(DIST, 'assets'), { recursive: true });
 }
 
 // ---- PDF generation ----
@@ -112,6 +107,7 @@ const MIME = {
 	'.css': 'text/css',
 	'.js': 'application/javascript',
 	'.pdf': 'application/pdf',
+	'.woff2': 'font/woff2',
 };
 
 function startServer() {
@@ -154,6 +150,7 @@ async function generatePdfs(pages) {
 					waitUntil: 'networkidle0',
 					timeout: 20000,
 				});
+				await page.evaluate(() => document.fonts.ready);
 				const pdf = await page.pdf({
 					format: 'Letter',
 					printBackground: false,
