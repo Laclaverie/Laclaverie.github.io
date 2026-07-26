@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test:print": "node tests/print-pages.js",
-    "test:print:save": "node tests/print-pages.js --save-pdfs",
+    "build": "node v2/build.js",
+    "build:fast": "node v2/build.js --no-pdf",
+    "test": "node v2/tests/check-pages.js",
+    "serve": "node v2/serve.js",
     "v2:build": "node v2/build.js",
     "v2:build:fast": "node v2/build.js --no-pdf",
     "v2:test": "node v2/tests/check-pages.js",

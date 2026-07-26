@@ -1,52 +1,77 @@
-# Portfolio de Pierre Laclaverie
+# laclaverie.github.io — data-driven CV
 
-Ce document sera divisé en trois thèmes (Jeux video, Traitement de l'image, Programmation), un projet peut avoir plusieurs tags.
+My personal CV site, and the small system that generates it. The published page **is**
+the CV; every version also ships as a print-ready PDF (English and French).
 
-# Sommaire 
+Live: **https://laclaverie.github.io/**
 
-- [Portfolio de Pierre Laclaverie](#portfolio-de-pierre-laclaverie)
-- [Sommaire](#sommaire)
-- [Tags](#tags)
-- [Projets de jeu vidéo](#projets-de-jeu-vidéo)
-- [Projets de traitement de l'image](#projets-de-traitement-de-limage)
-- [Projets de programmation](#projets-de-programmation)
+## The idea
 
-# Tags
+I apply to a range of roles, and a good CV is tailored to each one. Rather than maintain a
+pile of copy-pasted documents, I keep **one source of content** and describe each tailored
+version as a small **role template**. A build script renders every version to a static page
+and a matched pair of PDFs, and a test fails the build if any PDF spills past two pages.
 
-| Tag | Definition |
-|:---:|:---:|
-|(JVX)|Jeu vidéo|
-|(TIM)|Traitement de l'image|
-|(PGT)|Programmation "classique"|
-|(#TIM)|coups de cœur TIM|
-|(#PGTM)|coup de coeur PGT|
-|(#JVX)|coup  de cœur JVX|
+I'm a tools programmer, not a web developer — so I built this with **Claude Code** as a
+pragmatic way to get a clean result in a domain I don't work in daily, instead of
+hand-rolling a worse site myself.
 
-# Projets de jeu vidéo 
+## How it works
 
-|Nom du projet| Technologie| Code| Tag |Date de réalisation|
-|:---:|:---:|:---:|:---:|:---:|
-|Qat Game|Unity 2D|[itch](https://eyind.itch.io/qat)| (JVX)(#JVX) |Hiver 2022|
-|PsyHunt| Unity 3D|[github](https://github.com/Laclaverie/PsyHunt)|(JVX) |Automne 2021|
-|Le plus long trajet en voiture|  OpenCV, OpenGL, QT, C++|[github](https://github.com/Laclaverie/Voiture)| (JVX) (TIM) (PGT) |Été 2021|
+```
+v2/
+  content/
+    cv.json            # single source of truth — every line of content, EN + FR.
+                       # Experience bullets and projects have stable IDs + tags.
+    roles/*.json       # one template per kind of role: picks the headline, profile,
+                       # which bullets/projects appear (and their order), and an
+                       # optional role-specific skills line.
+    applications.json  # one entry per job application (~6 lines): path, company,
+                       # role template, job title -> its own page + named PDFs.
+  templates/cv.html    # HTML shell (meta, favicon, placeholders)
+  assets/cv.css        # screen + print styles (print block is enforced by the test)
+  assets/cv.js         # renders the page from content at runtime; EN/FR toggle
+  assets/fonts/        # self-hosted Inter (identical PDF render on every OS / CI)
+  build.js             # content + role -> dist/: pages, per-page data, PDFs (puppeteer)
+  tests/check-pages.js # fails if any generated PDF exceeds two pages
+  serve.js             # local preview of dist/ exactly as GitHub Pages serves it
+```
 
-# Projets de traitement de l'image  
+A per-company page lives at `/<company>/<role>/` (set to `noindex`), with PDFs named
+`pierre-laclaverie-cv-<company>-<role>-{en,fr}.pdf`. The default CV is at `/`.
 
-| Nom du projet| Technologie| Code| Tag |Date de réalisation|
-|:---:|:---:|:---:|:---:|:---:|
-|Génération d'images, GAN|python tensorflow|[github](https://github.com/Laclaverie/gan)| (TIM) (PGT) |Hiver 2022|
-|CNN, transfert learning,classification|  python, tensorflow, keras|[github](https://github.com/Laclaverie/cnn)| (TIM) |Hiver 2022|
-|Estimer la quantité d'espace non rangé dans une piece|  python OpenCV|[github](https://github.com/Laclaverie/TNI-UAQC-TP1) | (TIM) |Hiver 2022|
-| Sécurité informatique : blockchain|python, OpenCv, Web, SQL |[github](https://github.com/Laclaverie/blockchain)| (TIM) (PGT) |Hiver 2022|
-|Segmentation et labellisations de roches| python,OpenCV | [github](https://github.com/Laclaverie/uqac-tni-watershed)| (TIM) |Hiver 2022|
-|Astra Pioneers|  OpenCv,OpenGL, C++, QT|[gitlab](https://code.telecomste.fr/laclaverie.pierre/astra-pioneers)  | (JVX) (TIM) (PGT) (#JVX) (#TIM) |Hiver 2021|
-|Projet Design x informatique|python,Opencv, pyrebase,VueJS| [github](https://github.com/Laclaverie/design) | (TIM) (PGT) |Automne 2020/Hiver 2021|
+## Commands
 
+```bash
+npm ci             # install (puppeteer + pdf-parse)
+npm run build      # generate dist/ (pages + PDFs)
+npm run build:fast # skip PDFs (quick content preview)
+npm run test       # assert every PDF is <= 2 pages
+npm run serve      # preview dist/ at http://localhost:9880/
+```
 
-# Projets de programmation
+## Adding a tailored version
 
-| Nom du projet| Technologie| Code| Tag |Date de réalisation|
-|:---:|:---:|:---:|:---:|:---:|
-| Trois mini-projets en Intelligence artificielle| python|[github](https://github.com/Laclaverie/td-ia-uqac)| (PGT) |Hiver 2022|
-|Recréer des chaines de contaminations| JAVA|[github](https://github.com/Laclaverie/hpp)| (PGT) (#PGTM)|Été 2021|
-|Application de chat|JS|[gitlab](https://code.telecomste.fr/laclaverie.pierre/projet_js)| (PGT) |Hiver 2021|
+Append one entry to `v2/content/applications.json`:
+
+```json
+{
+  "path": "acme/backend-engineer",
+  "company": "Acme",
+  "role": "cpp-systems",
+  "jobTitle": { "en": "Backend Engineer", "fr": "Ingénieur Backend" }
+}
+```
+
+Rebuild -> a new page at `/acme/backend-engineer/` with its own PDFs. Need a new emphasis?
+Add a `roles/*.json` template instead of editing shared content.
+
+## Deployment
+
+Push to `main`. GitHub Actions (`.github/workflows/deploy.yml`) installs, builds, runs the
+page-count test, and publishes `v2/dist` to GitHub Pages.
+
+## Archive
+
+The previous hand-built version of this site and older experiments live in
+[`.archive/`](.archive/) — kept for reference, not served.
