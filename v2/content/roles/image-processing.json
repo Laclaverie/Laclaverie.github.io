@@ -1,0 +1,13 @@
+{
+  "id": "image-processing",
+  "headline": {
+    "en": "Tools Programmer • Image Processing • Test Automation",
+    "fr": "Programmeur Outils • Traitement d'images • Automatisation de Tests"
+  },
+  "profile": "image-processing",
+  "experience": {
+    "ubisoft": ["npc-sanity", "csharp-tooling", "test-framework", "observability", "collaboration"],
+    "matrox": ["guided-filter", "design-docs", "testing"]
+  },
+  "projects": ["ticket-analyzer", "facial-recognition", "price-comparer", "qat-game"]
+}

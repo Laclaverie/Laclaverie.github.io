@@ -1,0 +1,13 @@
+{
+  "id": "qa-tools",
+  "headline": {
+    "en": "Test Automation Programmer • QA • Tools",
+    "fr": "Programmeur en Automatisation de Tests • Assurance Qualité • Outils"
+  },
+  "profile": "qa-tools",
+  "experience": {
+    "ubisoft": ["npc-sanity", "csharp-tooling", "test-framework", "observability", "collaboration"],
+    "matrox": ["guided-filter", "design-docs", "testing"]
+  },
+  "projects": ["ticket-analyzer", "price-comparer", "qat-game", "facial-recognition"]
+}

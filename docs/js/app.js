@@ -101,9 +101,9 @@ function renderCoursework() {
 
 	// Translations
 	const uqacTitle = lang === 'fr' ? translations.fr.masters : translations.en.masters;
-	const uqacLocation = 'Université du Québec à Chicoutimi (UQAC)';
+	const uqacLocation = 'Université du Québec à Chicoutimi (UQAC) — 2023';
 	const tseTitle = lang === 'fr' ? translations.fr.engineer : translations.en.engineer;
-	const tseLocation = 'Télécom Saint Etienne';
+	const tseLocation = 'Télécom Saint Etienne — 2023';
 	const titleFeatured = lang === 'fr' ? 'Cours pertinents' : 'Relevant Courses';
 
 	// Helper function to create coursework section

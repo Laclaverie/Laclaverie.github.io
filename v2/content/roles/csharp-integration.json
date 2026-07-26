@@ -1,0 +1,13 @@
+{
+  "id": "csharp-integration",
+  "headline": {
+    "en": "Software Developer • C# • Test Automation • Imaging",
+    "fr": "Développeur Logiciel • C# • Automatisation de Tests • Imagerie"
+  },
+  "profile": "csharp-integration",
+  "experience": {
+    "ubisoft": ["csharp-tooling", "test-framework", "npc-sanity", "collaboration", "observability"],
+    "matrox": ["guided-filter", "design-docs", "testing"]
+  },
+  "projects": ["ticket-analyzer", "facial-recognition", "price-comparer", "qat-game"]
+}

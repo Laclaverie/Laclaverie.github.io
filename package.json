@@ -4,7 +4,11 @@
   "private": true,
   "scripts": {
     "test:print": "node tests/print-pages.js",
-    "test:print:save": "node tests/print-pages.js --save-pdfs"
+    "test:print:save": "node tests/print-pages.js --save-pdfs",
+    "v2:build": "node v2/build.js",
+    "v2:build:fast": "node v2/build.js --no-pdf",
+    "v2:test": "node v2/tests/check-pages.js",
+    "v2:serve": "node v2/serve.js"
   },
   "devDependencies": {
     "pdf-parse": "^1.1.1",

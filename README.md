@@ -28,7 +28,7 @@ Ce document sera divisé en trois thèmes (Jeux video, Traitement de l'image, Pr
 |:---:|:---:|:---:|:---:|:---:|
 |Qat Game|Unity 2D|[itch](https://eyind.itch.io/qat)| (JVX)(#JVX) |Hiver 2022|
 |PsyHunt| Unity 3D|[github](https://github.com/Laclaverie/PsyHunt)|(JVX) |Automne 2021|
-|Le plus long trajet en voiture|  OpenCV, OpenGL, QT, C++|[github](https://github.com/Laclaverie/Voiture)| JVX) (TIM) (PGT) |Été 2021|
+|Le plus long trajet en voiture|  OpenCV, OpenGL, QT, C++|[github](https://github.com/Laclaverie/Voiture)| (JVX) (TIM) (PGT) |Été 2021|
 
 # Projets de traitement de l'image  
 

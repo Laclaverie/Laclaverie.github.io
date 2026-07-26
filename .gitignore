@@ -30,7 +30,9 @@ Thumbs.db
 
 # Dependencies
 node_modules/
-package-lock.json
+
+# Build output
+v2/dist/
 
 # Test artifacts
 tests/*.pdf

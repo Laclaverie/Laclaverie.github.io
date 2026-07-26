@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "name": "Pierre Laclaverie",
+    "location": "Montréal, QC",
+    "email": "pierre.laclaverie@gmail.com",
+    "linkedin": "linkedin.com/in/pierre-laclaverie/",
+    "github": "github.com/Laclaverie",
+    "website": "laclaverie.github.io"
+  },
+  "labels": {
+    "profileTitle": { "en": "Profile", "fr": "Profil" },
+    "skillsProgramming": { "en": "Programming:", "fr": "Programmation :" },
+    "skillsTools": { "en": "Tools & Frameworks:", "fr": "Outils & Frameworks :" },
+    "skillsLanguages": { "en": "Languages:", "fr": "Langues :" },
+    "residency": { "en": "Status:", "fr": "Statut :" },
+    "experience": { "en": "Professional Experience", "fr": "Expérience Professionnelle" },
+    "projects": { "en": "Personal & Academic Projects", "fr": "Projets Personnels & Scolaires" },
+    "education": { "en": "Education", "fr": "Formation" },
+    "highlights": { "en": "Highlights:", "fr": "En bref :" },
+    "relevantCourses": { "en": "Relevant courses:", "fr": "Cours pertinents :" },
+    "downloadPdf": { "en": "Download PDF", "fr": "Télécharger le PDF" },
+    "print": { "en": "Print", "fr": "Imprimer" },
+    "applicationTag": { "en": "Application:", "fr": "Candidature :" }
+  },
+  "profiles": {
+    "qa-tools": {
+      "en": "Test automation programmer specializing in tool development for game production, working daily with CI/CD pipelines (TeamCity, GitLab CI). Experienced in architecting large-scale automated test systems (C++, C#) and developing image processing filters (C++/OpenCV). Involved across the full development lifecycle, from design to production delivery.",
+      "fr": "Programmeur spécialisé dans l'automatisation de tests et le développement d'outils pour le jeu vidéo, travaillant quotidiennement avec des pipelines CI/CD (TeamCity, GitLab CI). Expérience dans l'architecture de systèmes de tests automatisés à grande échelle (C++, C#) et le développement de filtres d'images (C++/OpenCV). Impliqué sur l'ensemble du cycle de développement, de la conception à la mise en production."
+    },
+    "csharp-integration": {
+      "en": "Software developer (C#, C++) with three years at Ubisoft building large-scale test automation and developer tooling, and an image processing background (engineering degree + Matrox Imaging). Used to maintaining frameworks consumed by many teams, monitoring services through automated tests in CI, and carrying features from design to production in an agile, bilingual environment.",
+      "fr": "Développeur logiciel (C#, C++) avec trois ans chez Ubisoft en automatisation de tests à grande échelle et outillage développeur, et une formation en traitement d'images (diplôme d'ingénieur + Matrox Imaging). Habitué à maintenir des frameworks utilisés par de nombreuses équipes, à surveiller des services via des tests automatisés en CI, et à mener des fonctionnalités de la conception à la production dans un environnement agile et bilingue."
+    },
+    "image-processing": {
+      "en": "Software engineer with an image processing background (engineering degree + Matrox Imaging) currently building large-scale test automation and developer tooling for game engines. Comfortable implementing algorithms from research papers (C++/OpenCV) and taking them to production with rigorous testing.",
+      "fr": "Ingénieur logiciel avec une formation en traitement d'images (diplôme d'ingénieur + Matrox Imaging), travaillant actuellement sur l'automatisation de tests à grande échelle et l'outillage pour moteurs de jeu. À l'aise pour implémenter des algorithmes issus de publications scientifiques (C++/OpenCV) et les amener en production avec des tests rigoureux."
+    }
+  },
+  "skills": [
+    {
+      "id": "programming",
+      "label": "skillsProgramming",
+      "value": { "en": "C++, C#, Python, SQL", "fr": "C++, C#, Python, SQL" }
+    },
+    {
+      "id": "tools",
+      "label": "skillsTools",
+      "value": {
+        "en": "xUnit/NUnit, Catch2, VS Test Adapter, Perforce, Git/GitLab, TeamCity, GitLab CI, Jira, OpenCV, Unity3D",
+        "fr": "xUnit/NUnit, Catch2, VS Test Adapter, Perforce, Git/GitLab, TeamCity, GitLab CI, Jira, OpenCV, Unity3D"
+      }
+    },
+    {
+      "id": "languages",
+      "label": "skillsLanguages",
+      "value": { "en": "French (Native), English (Professional)", "fr": "Français (Natif), Anglais (Professionnel)" }
+    },
+    {
+      "id": "residency",
+      "label": "residency",
+      "value": { "en": "Permanent Resident", "fr": "Résident Permanent" }
+    }
+  ],
+  "highlights": [
+    {
+      "id": "leadership",
+      "text": { "en": "Leadership — president, robotics student association", "fr": "Leadership — président d'une association étudiante de robotique" }
+    },
+    {
+      "id": "collaboration",
+      "text": { "en": "Cross-team collaboration (Europe, Canada, Singapore)", "fr": "Collaboration inter-équipes (Europe, Canada, Singapour)" }
+    },
+    {
+      "id": "learning",
+      "text": { "en": "Continuous learning — quick to explore new tech", "fr": "Apprentissage continu — rapide à explorer de nouvelles technologies" }
+    },
+    {
+      "id": "adaptation",
+      "text": { "en": "Adapts proven solutions to new use cases", "fr": "Adapte des solutions éprouvées à de nouveaux usages" }
+    }
+  ],
+  "teamNote": {
+    "en": "Note: Projects carried out in small teams (~3 programmers + a lead), from design to implementation, in collaboration with other teams to gather feedback on the shared technologies used.",
+    "fr": "Note : Travaux réalisés en petites équipes (~3 programmeurs + un lead), de la conception à l'implémentation, en collaboration avec les équipes responsables des technologies partagées pour obtenir des retours techniques."
+  },
+  "experience": [
+    {
+      "id": "ubisoft",
+      "title": {
+        "en": "Test Automation Programmer - Quality Assurance",
+        "fr": "Programmeur en Automatisation de Tests - Assurance Qualité"
+      },
+      "date": { "en": "May 2023 – Present", "fr": "Mai 2023 – Présent" },
+      "company": {
+        "en": "Ubisoft Montreal (Anvil Pipeline) — Shipped: AC Shadows, AC Black Flag Resynced",
+        "fr": "Ubisoft Montréal (Anvil Pipeline) — Jeux livrés : AC Shadows, AC Black Flag Resynced"
+      },
+      "bullets": [
+        {
+          "id": "npc-sanity",
+          "tags": ["qa", "tools", "engine"],
+          "text": {
+            "en": "Designed and evolved NPC Sanity across three releases (v1: AC Shadows, v1.5: its DLC, v2: AC Black Flag Resynced) — validation tool monitoring thousands of NPCs across 32 combinatorial states and quest setups, distributed across 6 machines (~120h runtime). Caught multiple regressions pre-ship. v2 generalizes dynamic CI test generation (Jira reports for Level Designers) to any high-combinatorial test type.",
+            "fr": "Conception et évolution de NPC Sanity sur trois sorties (v1 : AC Shadows, v1.5 : son DLC, v2 : AC Black Flag Resynced) — outil de validation surveillant des milliers de NPCs sur 32 états combinatoires et configurations de quêtes. Suite distribuée sur 6 machines (~120h d'exécution) ; détection de nombreuses régressions avant la sortie. La v2 généralise la génération dynamique de tests en CI (rapports Jira pour Level Designers) à tout type de tests à haute combinatoire."
+          },
+          "webExtra": {
+            "en": "Valued enough that AI technical directors and level designers requested it be among the last systems decommissioned during post-release scale-down.",
+            "fr": "Jugé suffisamment précieux pour que les directeurs techniques IA et les level designers demandent qu'il figure parmi les derniers systèmes décommissionnés lors de la réduction post-sortie."
+          }
+        },
+        {
+          "id": "csharp-tooling",
+          "tags": ["tools", "ci"],
+          "text": {
+            "en": "Built a C# test-metadata system (user-provided and computed) for the monorepo shared by 5 productions, driving automatic test promotion in CI — monitored trial period, then assignment to the right stage (package-blocking, post-publish validation, daily, nightly). Automating repetitive tasks and improving user experience to get more developers engaged with test automation, from unit to functional to end-to-end tests (e.g. NPC Sanity).",
+            "fr": "Développement d'un système C# de métadonnées de tests (fournies ou calculées) pour le monorepo partagé entre 5 productions, pilotant la promotion automatique des tests en CI — période de surveillance, puis affectation au bon stage (bloquant la publication de package, validation post-publication, quotidien, nocturne). Automatisation des tâches répétitives et amélioration de l'expérience utilisateur pour engager davantage de développeurs dans l'automatisation des tests, du test unitaire au fonctionnel jusqu'au end-to-end (ex. NPC Sanity)."
+          }
+        },
+        {
+          "id": "test-framework",
+          "tags": ["qa", "tools", "ci"],
+          "text": {
+            "en": "Maintained and evolved the Anvil Pipeline test framework: VS test adapter (run functional tests locally or on CI machines), automated CI integration for game package qualification (artifact collection, auto Jira creation). Technical bridge between game programmers and CI/CD infrastructure.",
+            "fr": "Maintenance et évolution de l'écosystème de tests d'Anvil Pipeline : test adapter Visual Studio (exécution locale ou sur machines CI), intégration CI pour la qualification des packages de jeu (collecte d'artefacts, tickets Jira automatiques). Pont technique entre programmeurs jeu et infrastructure CI/CD."
+          }
+        },
+        {
+          "id": "observability",
+          "tags": ["qa", "ci"],
+          "text": {
+            "en": "Development of observability tools for CI tests and participation in a 3-person taskforce for prototyping a flaky test detection system.",
+            "fr": "Développement d'outils d'observabilité pour les tests en CI et participation à une taskforce de 3 personnes pour le prototypage d'un système de détection de tests instables (flaky tests)."
+          }
+        },
+        {
+          "id": "collaboration",
+          "tags": ["qa", "soft-skills"],
+          "text": {
+            "en": "Weekly collaboration with teams across Europe, Canada, and Singapore; part of the test-automation hotline rotation — first line of support for game teams, sharing expertise and investigating issues across multiple systems.",
+            "fr": "Collaboration hebdomadaire avec des équipes en Europe, au Canada et à Singapour ; membre de la rotation hotline en automatisation de tests — premier point de contact des équipes de jeu, partage d'expertise et investigation à travers de multiples systèmes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "matrox",
+      "title": { "en": "Software Development Intern", "fr": "Stagiaire Développement Logiciel" },
+      "date": { "en": "Oct. 2022 – April 2023", "fr": "Oct. 2022 – Avril 2023" },
+      "company": { "en": "Matrox Imaging (Zebra)", "fr": "Matrox Imaging (Zebra)" },
+      "bullets": [
+        {
+          "id": "guided-filter",
+          "tags": ["image"],
+          "text": {
+            "en": "Implemented Guided Filter and Fast Guided Filter (C++/OpenCV) from research papers, replacing bilateral filtering: reliable with slight speed gain (Guided); 2-3× faster at reduced precision (Fast Guided).",
+            "fr": "Implémentation du Guided Filter et Fast Guided Filter (C++/OpenCV) à partir de publications de recherche, en remplacement du filtrage bilatéral. Guided Filter : fiable avec légère amélioration de vitesse ; Fast Guided Filter : 2 à 3 fois plus rapide, précision réduite."
+          }
+        },
+        {
+          "id": "design-docs",
+          "tags": ["image"],
+          "text": {
+            "en": "Authored design documents, proof of viability, and integration into the Matrox Imaging Library (MIL).",
+            "fr": "Rédaction de documents de conception, preuves de viabilité et intégration dans la Matrox Imaging Library (MIL)."
+          }
+        },
+        {
+          "id": "testing",
+          "tags": ["qa", "image"],
+          "text": {
+            "en": "Extensive testing (unit, functional, and performance) prior to integration.",
+            "fr": "Tests extensifs (unitaires, fonctionnels et performance) avant intégration."
+          }
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "ticket-analyzer",
+      "tags": ["image", "ml"],
+      "name": { "en": "Ticket Analyzer (YOLOv8)", "fr": "Ticket Analyzer (YOLOv8)" },
+      "url": "https://github.com/Laclaverie/ticket-analyzer",
+      "status": { "en": "[Personal Project / Solo]", "fr": "[Projet personnel / Solo]" },
+      "desc": {
+        "en": "FastAPI/OpenAPI backend for receipt data extraction using YOLOv8 (Labelme + Ultralytics). SQLite persistence, local-only execution for privacy. Vite+React+TS front-end.",
+        "fr": "Backend FastAPI/OpenAPI d'extraction de données de reçus via YOLOv8 (Labelme + Ultralytics). Persistance SQLite, exécution locale pour la confidentialité. Interface Vite+React+TS."
+      }
+    },
+    {
+      "id": "price-comparer",
+      "tags": ["mobile"],
+      "name": { "en": "Supermarket Price Comparer", "fr": "Comparateur de prix (Supermarché)" },
+      "url": "https://github.com/Laclaverie/app-comparer",
+      "status": { "en": "[Personal Project / Solo]", "fr": "[Projet personnel / Solo]" },
+      "desc": {
+        "en": "Android app that scans product barcodes and compares prices across local stores. Functional prototype with REST API and database.",
+        "fr": "Application Android comparant les prix d'un produit entre différents magasins via scan de code-barres. Prototype fonctionnel avec API REST et base de données."
+      }
+    },
+    {
+      "id": "qat-game",
+      "tags": ["games"],
+      "name": { "en": "Qat Game", "fr": "Jeu Qat" },
+      "url": "https://eyind.itch.io/qat",
+      "status": { "en": "[Academic / Team Project]", "fr": "[Projet Académique / Équipe]" },
+      "desc": {
+        "en": "2D narrative game developed with Unity3D (C#).",
+        "fr": "Jeu narratif 2D développé avec Unity3D (C#)."
+      }
+    },
+    {
+      "id": "facial-recognition",
+      "tags": ["image"],
+      "name": { "en": "Facial Recognition", "fr": "Reconnaissance faciale" },
+      "url": "https://github.com/Laclaverie/blockchain",
+      "status": { "en": "[Academic / Team Project]", "fr": "[Projet Académique / Équipe]" },
+      "desc": {
+        "en": "Face recognition in video streams with email notifications and Blockchain storage. Python, OpenCV (Haar cascade classifiers).",
+        "fr": "Reconnaissance faciale dans un flux vidéo avec notifications e-mail et stockage Blockchain. Python, OpenCV (classificateurs Haar cascade)."
+      }
+    }
+  ],
+  "education": [
+    {
+      "id": "uqac",
+      "degree": {
+        "en": "Master's in Computer Science - Video Game Option",
+        "fr": "Maîtrise en Informatique - Option Jeux Vidéo"
+      },
+      "school": "Université du Québec à Chicoutimi (UQAC)",
+      "year": "2023",
+      "courses": [
+        { "en": "Video Game Design/Dev Principles", "fr": "Principes de conception/dév. jeux vidéo" },
+        { "en": "Game Engine Principles", "fr": "Principes des moteurs de jeux" },
+        { "en": "Advanced Object-Oriented Programming", "fr": "Programmation objet avancée" },
+        { "en": "Computer Vision and Image Processing", "fr": "Vision artificielle et traitement des images" },
+        { "en": "Artificial Intelligence", "fr": "Intelligence artificielle" },
+        { "en": "AI for Video Games", "fr": "Intelligence artificielle pour le jeu vidéo" }
+      ]
+    },
+    {
+      "id": "tse",
+      "degree": {
+        "en": "French Engineering Degree - Computer Science, Image Processing",
+        "fr": "Diplôme d'Ingénieur - Informatique, Traitement d'Images"
+      },
+      "school": "Télécom Saint-Étienne",
+      "year": "2023",
+      "courses": [
+        { "en": "Advanced Algorithms", "fr": "Algorithmie avancée" },
+        { "en": "Image Analysis Project", "fr": "Projet d'analyse d'image" },
+        { "en": "Image Processing", "fr": "Traitement d'image" },
+        { "en": "Mathematical Morphology", "fr": "Morphologie mathématique" },
+        { "en": "Databases", "fr": "Bases de données" },
+        { "en": "High Performance Computing", "fr": "Programmation haute performance" }
+      ]
+    }
+  ]
+}

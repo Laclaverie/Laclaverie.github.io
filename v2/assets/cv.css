@@ -1,0 +1,339 @@
+/* ===== Base ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+	--text: #2c3e50;
+	--muted: #6b7a8a;
+	--accent: #0056b3;
+	--accent-dark: #004493;
+	--border: #e3e8ee;
+	--card-bg: #f7f9fb;
+	--page-bg: #ffffff;
+}
+
+body {
+	font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.55;
+	color: var(--text);
+	background: var(--page-bg);
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ===== Header ===== */
+header {
+	border-bottom: 2px solid var(--text);
+	padding: 2rem 1.5rem 1.25rem;
+	margin-bottom: 1.5rem;
+}
+
+.header-container {
+	max-width: 860px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+h1 { font-size: 2.2rem; line-height: 1.2; }
+.headline { font-size: 1.05rem; color: var(--muted); margin-top: 0.25rem; }
+.header-location { color: var(--muted); font-size: 0.95rem; }
+
+.application-tag {
+	margin-top: 0.4rem;
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: var(--accent);
+}
+
+.header-right { display: flex; gap: 0.5rem; align-items: center; }
+
+.ctrl-btn {
+	display: inline-block;
+	font: inherit;
+	font-size: 0.85rem;
+	padding: 0.4rem 0.8rem;
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	background: var(--card-bg);
+	color: var(--text);
+	cursor: pointer;
+}
+.ctrl-btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+/* ===== Layout ===== */
+main {
+	max-width: 860px;
+	margin: 0 auto;
+	padding: 0 1.5rem 2rem;
+}
+
+section { margin-bottom: 2rem; }
+
+h2 {
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	border-bottom: 1px solid var(--text);
+	padding-bottom: 0.25rem;
+	margin-bottom: 0.9rem;
+}
+
+/* ===== Contact ===== */
+.contact-header { text-align: center; margin-bottom: 1.5rem; font-size: 0.95rem; }
+
+/* ===== Profile / skills ===== */
+.profile-skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.75rem;
+	margin-top: 1rem;
+}
+
+.skill-item {
+	background: var(--card-bg);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	padding: 0.75rem 1rem;
+}
+
+/* ===== Highlight chips ===== */
+.highlight-chips {
+	margin-top: 0.9rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	align-items: center;
+}
+
+.chips-label {
+	font-weight: 600;
+	font-size: 0.9rem;
+	margin-right: 0.2rem;
+}
+
+.chip {
+	display: inline-block;
+	font-size: 0.85rem;
+	padding: 0.25rem 0.7rem;
+	border: 1px solid var(--border);
+	border-radius: 999px;
+	background: var(--card-bg);
+	color: var(--text);
+	transition: border-color 150ms ease;
+}
+.chip:hover { border-color: var(--accent); }
+
+/* ===== Experience ===== */
+.team-note {
+	font-size: 0.85rem;
+	font-style: italic;
+	color: var(--muted);
+	border-left: 3px solid var(--border);
+	padding-left: 0.75rem;
+	margin-bottom: 1rem;
+}
+
+.experience-item { margin-bottom: 1.25rem; }
+
+.item-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.item-header h3 { font-size: 1.1rem; }
+.item-date { font-size: 0.9rem; font-style: italic; color: var(--muted); white-space: nowrap; }
+.item-company { font-weight: 600; color: var(--accent); font-size: 0.95rem; margin-bottom: 0.4rem; }
+
+.item-details { padding-left: 1.2rem; }
+.item-details li { margin-bottom: 0.5rem; }
+
+/* ===== Projects ===== */
+.projects-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.75rem;
+}
+
+.project-item {
+	background: var(--card-bg);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	padding: 0.75rem 1rem;
+}
+
+.project-item h3 { font-size: 1rem; }
+.project-status { font-size: 0.8rem; font-weight: 600; color: var(--accent); margin: 0.15rem 0 0.35rem; }
+.project-desc { font-size: 0.92rem; }
+
+/* ===== Web-only extras (never printed) ===== */
+.web-extra {
+	margin-top: 0.35rem;
+	font-size: 0.88rem;
+	color: var(--muted);
+	border-left: 3px solid var(--accent);
+	padding-left: 0.6rem;
+}
+
+.edu-courses {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem;
+	align-items: center;
+	margin: 0.4rem 0 0.9rem;
+}
+
+/* ===== Education ===== */
+.edu-line { margin: 0.3rem 0; }
+
+/* ===== Footer ===== */
+footer { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 1.5rem 0 2rem; }
+
+/* ===== Screen polish (never applies in print) ===== */
+@media screen {
+	body {
+		line-height: 1.6;
+		border-top: 3px solid var(--accent);
+		overflow-wrap: break-word;
+	}
+
+	a { transition: color 150ms ease; }
+	a:hover { color: var(--accent-dark); }
+	a:focus-visible {
+		outline: 2px solid var(--accent);
+		outline-offset: 2px;
+		border-radius: 2px;
+	}
+
+	h1 {
+		font-size: 2.3rem;
+		font-weight: 700;
+		line-height: 1.15;
+		letter-spacing: -0.02em;
+	}
+	.headline { margin-top: 0.35rem; }
+	.header-location { margin-top: 0.15rem; }
+
+	h2 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		border-bottom: 2px solid var(--border);
+		padding-bottom: 0.35rem;
+		margin-bottom: 1rem;
+	}
+	h3 { font-weight: 600; }
+
+	section { margin-bottom: 2.25rem; }
+	.experience-item { margin-bottom: 1.5rem; }
+	.experience-item:last-child { margin-bottom: 0; }
+
+	.ctrl-btn {
+		font-weight: 600;
+		padding: 0.45rem 0.9rem;
+		transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
+	}
+	.ctrl-btn:hover {
+		background: #ffffff;
+		box-shadow: 0 1px 3px rgba(0, 86, 179, 0.12);
+	}
+	.ctrl-btn:focus-visible {
+		outline: 2px solid var(--accent);
+		outline-offset: 2px;
+	}
+	.ctrl-btn:active { box-shadow: none; }
+
+	.skill-item,
+	.project-item {
+		transition: border-color 150ms ease, box-shadow 150ms ease;
+	}
+	.skill-item:hover,
+	.project-item:hover {
+		border-color: #cdd8e4;
+		box-shadow: 0 2px 6px rgba(44, 62, 80, 0.07);
+	}
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 640px) {
+	.profile-skills, .projects-grid { grid-template-columns: 1fr; }
+	.header-container { flex-direction: column; }
+	header { padding: 1.5rem 1rem 1rem; }
+	main { padding: 0 1rem 1.5rem; }
+	h1 { font-size: 1.9rem; }
+	.ctrl-btn { min-height: 44px; padding: 0.6rem 1rem; }
+	.item-date { white-space: normal; }
+}
+
+/* ===== Print ===== */
+@media print {
+	.no-print { display: none !important; }
+
+	body { font-size: 11pt; color: black; background: white; }
+
+	header {
+		border-bottom: 2px solid #333;
+		padding: 0 0 0.25rem;
+		margin-bottom: 0.75rem;
+	}
+	.header-container { display: block; max-width: 100%; }
+	h1 { font-size: 22pt; }
+	.headline { margin-top: 0.15rem; }
+	.headline, .header-location { color: black; }
+	.application-tag { color: black; }
+
+	main { max-width: 100%; padding: 0; }
+
+	h2 { font-size: 15pt; border-bottom: 1px solid #333; color: black; }
+	a { color: #0056b3; text-decoration: underline; }
+
+	.contact-header { margin-bottom: 0.75rem; font-size: 10pt; }
+
+	.skill-item, .project-item {
+		background: none !important;
+		border: 1px solid #eee;
+		page-break-inside: avoid;
+	}
+
+	.highlight-chips {
+		page-break-inside: avoid;
+		gap: 0.25rem;
+		margin-top: 0.5rem;
+	}
+	.chips-label { font-size: 9pt; }
+	.chip {
+		font-size: 9pt;
+		padding: 0.1rem 0.5rem;
+		border: 1px solid #ccc;
+		background: none;
+	}
+
+	.experience-item { page-break-inside: auto; }
+	.experience-item .item-header,
+	.experience-item .item-company { page-break-after: avoid; }
+	.item-details li {
+		page-break-inside: avoid;
+		margin-bottom: 0.35rem;
+	}
+	.projects-grid { gap: 0.5rem; }
+	.project-item { padding: 0.5rem 0.75rem; }
+	.team-note { font-size: 9pt; }
+
+	section { margin-bottom: 1.25rem; }
+	.education { page-break-inside: avoid; }
+	.edu-line { margin: 0.15rem 0; }
+
+	/* French text runs ~15% longer: compensate */
+	html[lang="fr"] body { font-size: 10pt; }
+	html[lang="fr"] h2 { font-size: 13pt; }
+	html[lang="fr"] section { margin-bottom: 1rem; }
+	html[lang="fr"] .projects-grid { gap: 0.5rem; }
+	html[lang="fr"] .project-item { padding: 0.5rem 0.75rem; }
+}
