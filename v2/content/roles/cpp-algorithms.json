@@ -1,0 +1,38 @@
+{
+  "id": "cpp-algorithms",
+  "headline": {
+    "en": "Software Engineer • C++ • Algorithms • Performance",
+    "fr": "Ingénieur Logiciel • C++ • Algorithmes • Performance"
+  },
+  "profile": "cpp-algorithms",
+  "skills": [
+    {
+      "id": "programming",
+      "label": "skillsProgramming",
+      "value": { "en": "C++, Python, C#, SQL", "fr": "C++, Python, C#, SQL" }
+    },
+    {
+      "id": "tools",
+      "label": "skillsTools",
+      "value": {
+        "en": "Data structures & algorithms, performance optimization, multithreading, Git/Perforce, CI/CD",
+        "fr": "Structures de données & algorithmes, optimisation de performance, multithreading, Git/Perforce, CI/CD"
+      }
+    },
+    {
+      "id": "languages",
+      "label": "skillsLanguages",
+      "value": { "en": "French (Native), English (Professional)", "fr": "Français (Natif), Anglais (Professionnel)" }
+    },
+    {
+      "id": "residency",
+      "label": "residency",
+      "value": { "en": "Permanent Resident • Driver's license & vehicle", "fr": "Résident Permanent • Permis de conduire et véhicule" }
+    }
+  ],
+  "experience": {
+    "ubisoft": ["npc-sanity", "engine-cpp", "csharp-tooling", "collaboration"],
+    "matrox": ["guided-filter", "design-docs", "testing"]
+  },
+  "projects": ["car-trip", "contamination-chains", "ticket-analyzer", "rock-segmentation"]
+}

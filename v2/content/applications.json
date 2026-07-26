@@ -56,7 +56,7 @@
   {
     "path": "transit/routing-compression-dev",
     "company": "Transit",
-    "role": "cpp-systems",
+    "role": "cpp-algorithms",
     "jobTitle": {
       "en": "Routing & Compression Developer",
       "fr": "Développeur Routage & Compression"
