@@ -96,6 +96,37 @@ function writePage(dir, variant, { noindex, pdfBaseName, pageUrl }) {
 	);
 }
 
+// Hidden index of every generated CV version. Not linked from any page; noindex.
+// Reachable only if you know the URL: /versions/
+function writeVersionsIndex() {
+	const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+	function row(title, company, url, base) {
+		const label = company ? `${esc(company)} — ${esc(title)}` : esc(title);
+		return `<li><a href="${url}">${label}</a> · <a href="${url}${base}-en.pdf">PDF (EN)</a> · <a href="${url}${base}-fr.pdf">PDF (FR)</a></li>`;
+	}
+	const rows = [row('Default CV', '', '/', 'pierre-laclaverie-cv')];
+	for (const app of applications) {
+		const base = `pierre-laclaverie-cv-${app.path.split('/').join('-')}`;
+		rows.push(row((app.jobTitle && app.jobTitle.en) || app.path, app.company || '', `/${app.path}/`, base));
+	}
+	const html = `<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>CV versions</title>
+<link rel="icon" href="${FAVICON}">
+<style>body{font-family:system-ui,"Segoe UI",Arial,sans-serif;max-width:760px;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#222}h1{font-size:1.3rem}li{margin:.45rem 0}a{color:#0056b3}</style>
+</head><body>
+<h1>CV versions</h1>
+<p>Each role has its own tailored CV, generated from a single content source.</p>
+<ul>${rows.join('\n')}</ul>
+</body></html>`;
+	const dir = path.join(DIST, 'versions');
+	fs.mkdirSync(dir, { recursive: true });
+	fs.writeFileSync(path.join(dir, 'index.html'), html);
+	console.log('Page: /versions/ (hidden index, noindex)');
+}
+
 function copyAssets() {
 	fs.cpSync(path.join(ROOT, 'assets'), path.join(DIST, 'assets'), { recursive: true });
 }
@@ -190,6 +221,8 @@ async function main() {
 		pages.push({ dir, urlPath: '/' + app.path + '/', pdfBaseName: base });
 		console.log(`Page: /${app.path}/ (${app.company}, role ${app.role})`);
 	}
+
+	writeVersionsIndex();
 
 	fs.writeFileSync(path.join(DIST, 'robots.txt'), 'User-agent: *\nAllow: /\n');
 	fs.writeFileSync(path.join(DIST, '404.html'), `<!DOCTYPE html>

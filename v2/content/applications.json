@@ -52,5 +52,14 @@
       "en": "Software Engineer — Consulting M&E (Maya)",
       "fr": "Ingénieur Logiciel — Consulting M&E (Maya)"
     }
+  },
+  {
+    "path": "transit/routing-compression-dev",
+    "company": "Transit",
+    "role": "cpp-systems",
+    "jobTitle": {
+      "en": "Routing & Compression Developer",
+      "fr": "Développeur Routage & Compression"
+    }
   }
 ]
