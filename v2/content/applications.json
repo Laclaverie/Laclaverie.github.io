@@ -25,5 +25,14 @@
       "en": "Vision & AI Specialist",
       "fr": "Spécialiste vision et intelligence artificielle"
     }
+  },
+  {
+    "path": "tower/software-developer-ii",
+    "company": "Tower Research Capital",
+    "role": "cpp-systems",
+    "jobTitle": {
+      "en": "Software Developer II — Data team",
+      "fr": "Développeur en logiciels II — équipe des données"
+    }
   }
 ]

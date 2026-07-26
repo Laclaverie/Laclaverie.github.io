@@ -1,0 +1,38 @@
+{
+  "id": "cpp-systems",
+  "headline": {
+    "en": "Software Engineer • C++ • Systems • Algorithms",
+    "fr": "Ingénieur Logiciel • C++ • Systèmes • Algorithmes"
+  },
+  "profile": "cpp-systems",
+  "skills": [
+    {
+      "id": "programming",
+      "label": "skillsProgramming",
+      "value": { "en": "C++, C#, Python, SQL", "fr": "C++, C#, Python, SQL" }
+    },
+    {
+      "id": "tools",
+      "label": "skillsTools",
+      "value": {
+        "en": "Multithreading, data structures & algorithms, Git/Perforce, unit testing, performance optimization",
+        "fr": "Multithreading, structures de données & algorithmes, Git/Perforce, tests unitaires, optimisation de performance"
+      }
+    },
+    {
+      "id": "languages",
+      "label": "skillsLanguages",
+      "value": { "en": "French (Native), English (Professional)", "fr": "Français (Natif), Anglais (Professionnel)" }
+    },
+    {
+      "id": "residency",
+      "label": "residency",
+      "value": { "en": "Permanent Resident • Driver's license & vehicle", "fr": "Résident Permanent • Permis de conduire et véhicule" }
+    }
+  ],
+  "experience": {
+    "ubisoft": ["engine-cpp", "npc-sanity", "test-framework", "collaboration"],
+    "matrox": ["guided-filter", "design-docs", "testing"]
+  },
+  "projects": ["ticket-analyzer", "car-trip", "contamination-chains", "rock-segmentation"]
+}

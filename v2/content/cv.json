@@ -39,6 +39,10 @@
       "en": "Software engineer rooted in image processing (engineering degree at Télécom Saint-Étienne + Matrox Imaging), with three years of large-scale C# and C++ software at Ubisoft. Comfortable taking a vision algorithm from a research paper to production (C++/OpenCV) with rigorous testing, and applying machine learning where it helps (YOLOv8, CNNs). Solid software-engineering discipline: source control, code review, unit testing, debugging.",
       "fr": "Ingénieur logiciel ancré dans le traitement d'images (diplôme d'ingénieur à Télécom Saint-Étienne + Matrox Imaging), avec trois ans de développement logiciel C# et C++ à grande échelle chez Ubisoft. À l'aise pour mener un algorithme de vision de la publication de recherche jusqu'à la production (C++/OpenCV) avec des tests rigoureux, et pour appliquer l'apprentissage automatique là où il aide (YOLOv8, CNN). Discipline logicielle solide : contrôle de source, revue de code, tests unitaires, débogage."
     },
+    "cpp-systems": {
+      "en": "C++ engineer with six years of continuous C++ and three years at Ubisoft working across a large shared engine and monorepo (C++/C#). Strong computer-science fundamentals — data structures, algorithms, multi-threading — and a performance mindset shaped by image-processing work at Matrox. Comfortable ramping quickly on complex systems I didn't write.",
+      "fr": "Ingénieur C++ avec six ans de pratique continue du C++ et trois ans chez Ubisoft sur un grand moteur et monorepo partagés (C++/C#). Fondamentaux solides en informatique — structures de données, algorithmes, multithreading — et un souci de la performance forgé par le traitement d'images chez Matrox. À l'aise pour monter rapidement en compétence sur des systèmes complexes que je n'ai pas écrits."
+    },
     "image-processing": {
       "en": "Software engineer with an image processing background (engineering degree + Matrox Imaging) currently building large-scale test automation and developer tooling for game engines. Comfortable implementing algorithms from research papers (C++/OpenCV) and taking them to production with rigorous testing.",
       "fr": "Ingénieur logiciel avec une formation en traitement d'images (diplôme d'ingénieur + Matrox Imaging), travaillant actuellement sur l'automatisation de tests à grande échelle et l'outillage pour moteurs de jeu. À l'aise pour implémenter des algorithmes issus de publications scientifiques (C++/OpenCV) et les amener en production avec des tests rigoureux."
@@ -104,6 +108,14 @@
         "fr": "Ubisoft Montréal (Anvil Pipeline) — Jeux livrés : AC Shadows, AC Black Flag Resynced"
       },
       "bullets": [
+        {
+          "id": "engine-cpp",
+          "tags": ["cpp", "engine"],
+          "text": {
+            "en": "Worked inside the Anvil engine (C++) during my first two years, maintaining and evolving QA-automation code in a large shared codebase spanning five game productions.",
+            "fr": "Travail au cœur du moteur Anvil (C++) durant mes deux premières années : maintenance et évolution du code d'automatisation des tests dans une grande base de code partagée entre cinq productions."
+          }
+        },
         {
           "id": "npc-sanity",
           "tags": ["qa", "tools", "engine"],
@@ -270,6 +282,28 @@
       "desc": {
         "en": "Segmentation and labeling of rocks using classical image processing (watershed). Python, OpenCV.",
         "fr": "Segmentation et labellisation de roches par traitement d'images classique (watershed). Python, OpenCV."
+      }
+    },
+    {
+      "id": "car-trip",
+      "tags": ["cpp", "image"],
+      "name": { "en": "Longest Car Trip", "fr": "Le plus long trajet en voiture" },
+      "url": "https://github.com/Laclaverie/Voiture",
+      "status": { "en": "[Academic Project]", "fr": "[Projet Académique]" },
+      "desc": {
+        "en": "C++ application using OpenGL, Qt and OpenCV.",
+        "fr": "Application C++ utilisant OpenGL, Qt et OpenCV."
+      }
+    },
+    {
+      "id": "contamination-chains",
+      "tags": ["algorithms"],
+      "name": { "en": "Contamination Chains", "fr": "Chaînes de contamination" },
+      "url": "https://github.com/Laclaverie/hpp",
+      "status": { "en": "[Academic Project]", "fr": "[Projet Académique]" },
+      "desc": {
+        "en": "High-performance simulation reconstructing contamination chains. Java.",
+        "fr": "Simulation haute performance reconstruisant des chaînes de contamination. Java."
       }
     }
   ],
