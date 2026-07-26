@@ -1,0 +1,38 @@
+{
+  "id": "cpp-testing",
+  "headline": {
+    "en": "Software Engineer • C++ • Test Automation • Performance",
+    "fr": "Ingénieur Logiciel • C++ • Automatisation de Tests • Performance"
+  },
+  "profile": "cpp-testing",
+  "skills": [
+    {
+      "id": "programming",
+      "label": "skillsProgramming",
+      "value": { "en": "C++, C#, Python, SQL", "fr": "C++, C#, Python, SQL" }
+    },
+    {
+      "id": "tools",
+      "label": "skillsTools",
+      "value": {
+        "en": "xUnit/NUnit, Catch2, unit & integration testing, CI/CD, Git/Perforce, Jira, performance optimization",
+        "fr": "xUnit/NUnit, Catch2, tests unitaires & d'intégration, CI/CD, Git/Perforce, Jira, optimisation de performance"
+      }
+    },
+    {
+      "id": "languages",
+      "label": "skillsLanguages",
+      "value": { "en": "French (Native), English (Professional)", "fr": "Français (Natif), Anglais (Professionnel)" }
+    },
+    {
+      "id": "residency",
+      "label": "residency",
+      "value": { "en": "Permanent Resident • Driver's license & vehicle", "fr": "Résident Permanent • Permis de conduire et véhicule" }
+    }
+  ],
+  "experience": {
+    "ubisoft": ["engine-cpp", "test-framework", "csharp-tooling", "collaboration"],
+    "matrox": ["guided-filter", "design-docs", "testing"]
+  },
+  "projects": ["ticket-analyzer", "car-trip", "contamination-chains", "rock-segmentation"]
+}

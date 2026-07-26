@@ -34,5 +34,14 @@
       "en": "Software Developer II — Data team",
       "fr": "Développeur en logiciels II — équipe des données"
     }
+  },
+  {
+    "path": "mtx/cpp-developer",
+    "company": "TMX Group (CDCC)",
+    "role": "cpp-testing",
+    "jobTitle": {
+      "en": "High-Performance C++ Developer — SOLA Clearing",
+      "fr": "Développeur C++ haute performance — SOLA Clearing"
+    }
   }
 ]
