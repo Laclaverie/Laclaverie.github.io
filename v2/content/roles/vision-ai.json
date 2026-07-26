@@ -1,0 +1,13 @@
+{
+  "id": "vision-ai",
+  "headline": {
+    "en": "Software Engineer • Image Processing • C# / C++ • Applied AI",
+    "fr": "Ingénieur Logiciel • Traitement d'images • C# / C++ • IA appliquée"
+  },
+  "profile": "vision-ai",
+  "experience": {
+    "ubisoft": ["csharp-tooling", "test-framework", "collaboration"],
+    "matrox": ["guided-filter", "design-docs", "testing"]
+  },
+  "projects": ["ticket-analyzer", "cnn-classification", "gan-generation", "rock-segmentation"]
+}

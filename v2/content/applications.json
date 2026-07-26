@@ -16,5 +16,14 @@
       "en": "Tools Programmer — D&D survival craft game (Unity)",
       "fr": "Programmeur Outils — jeu D&D survival craft (Unity)"
     }
+  },
+  {
+    "path": "tundra/vision-ai-specialist",
+    "company": "Tundra",
+    "role": "vision-ai",
+    "jobTitle": {
+      "en": "Vision & AI Specialist",
+      "fr": "Spécialiste vision et intelligence artificielle"
+    }
   }
 ]

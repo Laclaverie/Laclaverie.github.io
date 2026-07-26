@@ -35,6 +35,10 @@
       "en": "Tools programmer (C#, C++) with three years at Ubisoft building internal tools and automation that make developers and non-technical content creators faster. I turn repetitive, friction-heavy workflows into clean, documented tooling that teams actually adopt — validation reporting consumed directly by Level Designers, for example. Shipped Unity games and looking to focus my tools craft inside the Unity Editor.",
       "fr": "Programmeur outils (C#, C++) avec trois ans chez Ubisoft à construire des outils internes et de l'automatisation qui rendent développeurs et créateurs de contenu non techniques plus efficaces. Je transforme des flux de travail répétitifs et pénibles en outils propres et documentés que les équipes adoptent réellement — des rapports de validation consommés directement par les Level Designers, par exemple. J'ai développé des jeux sous Unity et je cherche à spécialiser mon métier d'outilleur dans l'éditeur Unity."
     },
+    "vision-ai": {
+      "en": "Software engineer rooted in image processing (engineering degree at Télécom Saint-Étienne + Matrox Imaging), with three years of large-scale C# and C++ software at Ubisoft. Comfortable taking a vision algorithm from a research paper to production (C++/OpenCV) with rigorous testing, and applying machine learning where it helps (YOLOv8, CNNs). Solid software-engineering discipline: source control, code review, unit testing, debugging.",
+      "fr": "Ingénieur logiciel ancré dans le traitement d'images (diplôme d'ingénieur à Télécom Saint-Étienne + Matrox Imaging), avec trois ans de développement logiciel C# et C++ à grande échelle chez Ubisoft. À l'aise pour mener un algorithme de vision de la publication de recherche jusqu'à la production (C++/OpenCV) avec des tests rigoureux, et pour appliquer l'apprentissage automatique là où il aide (YOLOv8, CNN). Discipline logicielle solide : contrôle de source, revue de code, tests unitaires, débogage."
+    },
     "image-processing": {
       "en": "Software engineer with an image processing background (engineering degree + Matrox Imaging) currently building large-scale test automation and developer tooling for game engines. Comfortable implementing algorithms from research papers (C++/OpenCV) and taking them to production with rigorous testing.",
       "fr": "Ingénieur logiciel avec une formation en traitement d'images (diplôme d'ingénieur + Matrox Imaging), travaillant actuellement sur l'automatisation de tests à grande échelle et l'outillage pour moteurs de jeu. À l'aise pour implémenter des algorithmes issus de publications scientifiques (C++/OpenCV) et les amener en production avec des tests rigoureux."
@@ -233,6 +237,39 @@
       "desc": {
         "en": "Face recognition in video streams with email notifications and Blockchain storage. Python, OpenCV (Haar cascade classifiers).",
         "fr": "Reconnaissance faciale dans un flux vidéo avec notifications e-mail et stockage Blockchain. Python, OpenCV (classificateurs Haar cascade)."
+      }
+    },
+    {
+      "id": "cnn-classification",
+      "tags": ["image", "ml"],
+      "name": { "en": "CNN Transfer Learning", "fr": "CNN & transfert d'apprentissage" },
+      "url": "https://github.com/Laclaverie/cnn",
+      "status": { "en": "[Academic Project]", "fr": "[Projet Académique]" },
+      "desc": {
+        "en": "Image classification using CNNs and transfer learning. Python, TensorFlow/Keras.",
+        "fr": "Classification d'images par CNN et transfert d'apprentissage. Python, TensorFlow/Keras."
+      }
+    },
+    {
+      "id": "gan-generation",
+      "tags": ["image", "ml"],
+      "name": { "en": "Image Generation (GAN)", "fr": "Génération d'images (GAN)" },
+      "url": "https://github.com/Laclaverie/gan",
+      "status": { "en": "[Academic Project]", "fr": "[Projet Académique]" },
+      "desc": {
+        "en": "Generative adversarial network for image synthesis. Python, TensorFlow.",
+        "fr": "Réseau antagoniste génératif pour la synthèse d'images. Python, TensorFlow."
+      }
+    },
+    {
+      "id": "rock-segmentation",
+      "tags": ["image"],
+      "name": { "en": "Rock Segmentation", "fr": "Segmentation de roches" },
+      "url": "https://github.com/Laclaverie/uqac-tni-watershed",
+      "status": { "en": "[Academic Project]", "fr": "[Projet Académique]" },
+      "desc": {
+        "en": "Segmentation and labeling of rocks using classical image processing (watershed). Python, OpenCV.",
+        "fr": "Segmentation et labellisation de roches par traitement d'images classique (watershed). Python, OpenCV."
       }
     }
   ],
